@@ -50,6 +50,9 @@ button.navbar-toggle {
 #active>a {
   font-weight: bold;
 }
+.menu>li:hover a{
+  font-weight: bolder;
+}
 /* Line under navbar */
 .navbar-collapse hr{
   border-color: rgba(0, 128, 128, 0.2);
