@@ -41,3 +41,27 @@ $back_to_top.on('click', function(event){
         
 });
 // END OF FUNCTIONS TO BE RUN AFTER PAGE LOADS
+
+
+//FUNCTIONS TO BE RUN BEFORE PAGE HAS LOADED
+
+//Allows only numbers
+//charCode values can be found here: http://stevehardie.com/2009/09/character-code-list-char-code/ 
+//Used charCode to limit input to only numbers and + symbol
+// || means OR
+// && means AND
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if ((charCode > 31 && charCode < 43) || (charCode > 43 && (charCode < 48 || charCode > 57)))
+        return false;
+    return true;
+}
+
+//Allows only letters
+//Used charCode to limit input to only letters and hyphens
+function isAlphaKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if ((charCode > 32 && charCode < 45) || (charCode > 45 && charCode < 65) || (charCode > 90 && charCode < 97) || (charCode > 122))
+        return false;
+    return true;
+}
