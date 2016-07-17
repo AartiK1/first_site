@@ -61,4 +61,24 @@ body {
   font-weight: bold;
   color: white;
 }
+/* Social Icons */
+.social-icon{
+  text-align: center;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.social-icon>a{
+  text-decoration: none;
+  color: white;
+}
+.social-icon .fa{
+	margin: 0 6px;
+}
+.social-icon .fa:hover{
+  font-size: 330%;
+  transition: 0.3s;
+  color: black;
+}
+
+
 /* END OF FOOTER */
