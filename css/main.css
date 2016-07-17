@@ -1,3 +1,18 @@
+/* NAVBAR */
+
+/* Collapse/burger button bar color */
+.navbar-toggle>span {
+  background-color: white;
+} 
+/*Burger/Collapse button */
+button.navbar-toggle {
+  background-color: #008080;
+} 
+
+
+
+/* END OF NAVBAR */
+
 body {
 	font-family: 'roboto';
 }
