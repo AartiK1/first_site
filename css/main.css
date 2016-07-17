@@ -164,16 +164,16 @@ body {
 }
 /* Placeholder Color */
 .input-group>input::-webkit-input-placeholder {
-color: rgba(0, 128, 128, 0.5) !important;
+color: rgba(0, 128, 128, 0.7) !important;
 }
 .input-group>input:-moz-placeholder { /* Firefox 18- */
-color: rgba(0, 128, 128, 0.5) !important;  
+color: rgba(0, 128, 128, 0.7) !important;  
 }
 .input-group>input::-moz-placeholder {  /* Firefox 19+ */
-color: rgba(0, 128, 128, 0.5) !important;  
+color: rgba(0, 128, 128, 0.7) !important;  
 }
 .input-group>input:-ms-input-placeholder {  
-color: rgba(0, 128, 128, 0.5) !important;  
+color: rgba(0, 128, 128, 0.7) !important;  
 }
 /* End of Search Bar -->
 
