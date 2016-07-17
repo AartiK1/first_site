@@ -130,7 +130,13 @@ body {
 .social-icon{
   text-align: center;
   font-size: 16px;
-  font-family: 'roboto';
+}
+#get-social{
+  font-family: 'Ruthie', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 5px;
 }
 .social-icon>a{
   text-decoration: none;
