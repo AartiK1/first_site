@@ -1,3 +1,20 @@
+#myCarousel {
+       
+    background-repeat: no-repeat;
+    background-color:#008080;
+    z-index: 5;
+    padding-left: 0;
+    margin-right: 0px;
+}
+#myCarousel.vertical .item {
+  transition: 0.1s ease-in-out top;
+}
+#myCarousel .carousel-inner .item img{
+      width: 400px;
+      margin-left: 0;
+      position: relative;
+}
+
 /* NAVBAR */
 
 /* Collapse/burger button bar color */
