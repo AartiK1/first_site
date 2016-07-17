@@ -186,11 +186,61 @@ color: rgba(0, 128, 128, 0.7) !important;
 /* END OF FOOTER */
 
 /* BACK TO TOP BUTTON */
+@-webkit-keyframes cd-top {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes cd-top {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes cd-top-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes cd-top-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
 
 .cd-top {
   display: inline-block;
   height: 40px;
   width: 40px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   position: fixed;
   bottom: 40px;
   right: 10px;
@@ -225,6 +275,23 @@ color: rgba(0, 128, 128, 0.7) !important;
   opacity: 1;
   background: rgba(0, 128, 128, 0.8) url(../images/cd-top-arrow-b.png) no-repeat center 50%;
 }
+.cd-top:hover, .cd-top:focus, .cd-top:active {
+  -webkit-animation-name: cd-top-float, cd-top;
+  animation-name: cd-top-float, cd-top;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
 
 @media only screen and (min-width: 768px) {
   .cd-top {
