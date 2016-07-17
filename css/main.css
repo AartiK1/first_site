@@ -1,0 +1,31 @@
+body {
+	font-family: 'roboto';
+}
+
+/* PAGE HEADING */
+.jumbotron {
+	background-color: rgba(0, 128, 128, 1);
+}
+#header-title {
+	font-family: 'Ruthie', cursive;
+	text-align: center;
+	font-weight: 900;
+	font-size: 82px;
+}
+#header-subheading {
+	font-family: 'Ruthie', cursive;
+	text-align: center;
+	font-weight: 300;
+	font-size: 45px;
+}
+
+/* MAIN CONTENT */
+.intro {
+	color: #008080;
+	font-family: 'Ruthie', cursive;
+	font-size: 45px;
+	font-weight: 580;
+}
+.intro_content {
+
+}
