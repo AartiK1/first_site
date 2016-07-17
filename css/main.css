@@ -53,3 +53,12 @@ body {
 	display: block;
 	width: 100%;
 }
+.footer .alignleft a:hover , .footer .alignleft a:focus , .footer .alignright a:hover , .footer .alignright a:focus {
+  color: white;
+}
+/* Active Page */
+#active-ft {
+  font-weight: bold;
+  color: white;
+}
+/* END OF FOOTER */
