@@ -80,5 +80,35 @@ body {
   color: black;
 }
 
+/* Search Bar */
+.input-group{
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.input-group-btn>button {
+  color: rgba(0, 128, 128, 1);
+}
+.input-group-btn>button:hover {
+  /* Add some parameters?? */
+  background-color: black;
+  color: white;
+}
+.input-group input{
+  color: rgba(0, 128, 128, 1);
+}
+/* Placeholder Color */
+.input-group>input::-webkit-input-placeholder {
+color: rgba(0, 128, 128, 0.5) !important;
+}
+.input-group>input:-moz-placeholder { /* Firefox 18- */
+color: rgba(0, 128, 128, 0.5) !important;  
+}
+.input-group>input::-moz-placeholder {  /* Firefox 19+ */
+color: rgba(0, 128, 128, 0.5) !important;  
+}
+.input-group>input:-ms-input-placeholder {  
+color: rgba(0, 128, 128, 0.5) !important;  
+}
 
 /* END OF FOOTER */
