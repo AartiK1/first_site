@@ -27,23 +27,32 @@ button.navbar-toggle {
   width: 100%;
   display: inline-block;
 }
-.menu .menu-item {
-  padding: 0 0 10px 0;
+.menu-item {
+  padding: 0 0 5px 0;
   display: inline-block;
   min-height:3em;
   margin:0;
   overflow: hidden;
   width: 200px;
 }
-.menu .menu-item>a {
+.menu-item>a {
   font-size: 25px;
   display: inline-block;
   text-decoration: none;
   text-align: center;
   width:100%;
   height: 100%;
-  margin-top:1em;
-  font-family: 'roboto'
+  margin-top:0;
+  font-family: 'Ruthie';
+  font-size: 45px;
+  color: #008080;
+}
+#active>a {
+  font-weight: bold;
+}
+/* Line under navbar */
+.navbar-collapse hr{
+  border-color: rgba(0, 128, 128, 0.2);
 }
 
 /* END OF NAVBAR */
