@@ -67,7 +67,7 @@
 
 <!-- MAIN CONTENT -->
 <div id="main_content">
-	<!-- <div class="col-sm-11"> -->
+	<div class="col-sm-11">
 
 	<h2 class="intro">Gvianeonvqo</h2>
 	<div class="intro_content">
@@ -95,9 +95,48 @@
 		</p>
 	</div>
 
+	<br />
+<!-- CONTACT FORM -->
 
+	<div id="contact-form">
+		<form name="htmlform" method="post" action="thank-you.html" autocomplete="on">
 
-	<!-- </div> -->
+     		<label for="title">title</label>    
+    		<p><select name="title" title="Please select a title." required="">
+      			<option disabled selected value> -- select an option -- </option>
+      			<option value="miss">Miss</option>
+        		<option value="mrs">Mrs</option>
+        		<option value="mr">Mr</option>
+      			<option value="ms">Ms</option>
+        		<option value="sir">Sir</option>
+        		<option value="dr">Dr</option>
+        		<option value="lady">Lady</option>
+        		<option value="lord">Lord</option>
+        		<option value="other">Other</option>
+    		</select></p>
+			<label for="forname">forename</label>
+      		<p><textarea rows='1' class="name" type="text" name="fname" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      
+      		<label for="surname">surname</label>
+      		<p><textarea rows='1' class="name" type="text" name="lname" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      
+     	 	<label for="email">email address</label>
+      		<p><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="name@example.com" required></textarea></p>
+
+      		<label for="tel">telephone number (optional)</label>
+      		<p><textarea  rows='1' class="name" type="text" name="tel" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" required></textarea></p>
+
+      		<label for="msg">your message</label>
+      		<p><textarea id="msg" class="name form-control" name="comments" maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
+
+      		<div class="wrapper">
+      			<input class="sub-btn" type="submit" value="Submit"> 
+      		</div>
+    	</form>
+  	</div>
+  <!-- END OF CONTACT FORM -->
+
+	</div>
 
 <!-- END OF MAIN CONTENT -->	
 </div>
