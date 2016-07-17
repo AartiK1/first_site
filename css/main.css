@@ -29,3 +29,20 @@ body {
 .intro_content {
 
 }
+
+
+
+
+/* FOOTER */
+
+/* Footer General */
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.alignleft a , .alignright a{
+  color: black;
+  text-decoration: none;
+}
