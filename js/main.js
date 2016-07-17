@@ -1,8 +1,17 @@
 // FUNCTIONS TO BE RUN AFTER PAGE HAS LOADED
 $(document).ready(function() {   
 
-// BACK TO TOP BUTTON
+//TEXT CHARACTER COUNT
+var text_max = 500;
+$('#count_message').html(text_max + ' characters remaining');
+$('#msg').keyup(function() {
+    var text_length = $('#msg').val().length;
+    var text_remaining = text_max - text_length;
+    $('#count_message').html(text_remaining + ' characters remaining');
+});
+//END OF CHARACTER COUNT
 
+// BACK TO TOP BUTTON
 // browser window scroll (in pixels) after which the "back to top" link is shown
 var offset = 100,
   //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
