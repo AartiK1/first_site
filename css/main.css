@@ -1,20 +1,3 @@
-#myCarousel {
-       
-    background-repeat: no-repeat;
-    background-color:#008080;
-    z-index: 5;
-    padding-left: 0;
-    margin-right: 0px;
-}
-#myCarousel.vertical .item {
-  transition: 0.1s ease-in-out top;
-}
-#myCarousel .carousel-inner .item img{
-      width: 400px;
-      margin-left: 0;
-      position: relative;
-}
-
 /* NAVBAR */
 
 /* Collapse/burger button bar color */
@@ -90,6 +73,8 @@ body {
 	text-align: center;
 	font-weight: 900;
 	font-size: 82px;
+	color: black;
+
 }
 #header-subheading {
 	font-family: 'Ruthie', cursive;
@@ -97,6 +82,7 @@ body {
 	font-weight: 300;
 	font-size: 45px;
 }
+
 
 /* MAIN CONTENT */
 .intro {
