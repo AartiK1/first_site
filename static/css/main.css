@@ -220,7 +220,7 @@ color: rgba(0, 128, 128, 0.7) !important;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
-  background: rgba(0, 128, 128, 0.8) url(../../images/cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(0, 128, 128, 0.8) url(cd-top-arrow.svg) no-repeat center 50%;
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
@@ -238,7 +238,7 @@ color: rgba(0, 128, 128, 0.7) !important;
 }
 .cd-top:hover {
   opacity: 1;
-  background: rgba(0, 128, 128, 0.8) url(../../images/cd-top-arrow-b.png) no-repeat center 50%;
+  background: rgba(0, 128, 128, 0.8) url(cd-top-arrow-b.png) no-repeat center 50%;
 }
 
 @-webkit-keyframes cd-top {
