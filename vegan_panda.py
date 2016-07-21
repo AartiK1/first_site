@@ -10,7 +10,7 @@ def contact_us_message(to, first_name, msg):
     return requests.post(
         "https://api.mailgun.net/v3/%s/messages" % MAILGUN_DOMAIN, 
         auth=("api", MAILGUN_API_KEY),
-        files = [("attachment", open("attachments/example.txt")), ("inline", open("images/happy_panda.png"))],
+        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/images/happy_panda.png"))],
         data={
             "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
@@ -35,7 +35,7 @@ def subscription_message(to, first_name):
     return requests.post(
         "https://api.mailgun.net/v3/%s/messages" % MAILGUN_DOMAIN, 
         auth=("api", MAILGUN_API_KEY),
-        files = [("attachment", open("example.txt")), ("inline", open("happy_panda.png"))],
+        files = [("attachment", open("attachments/example.txt")), ("inline", open("static/images/happy_panda.png"))],
         data={
             "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
@@ -67,7 +67,7 @@ def home2():
 def about():
     return render_template("about.html")
     
-@app.route("/contact/thank-you.html")
+@app.route("/thank-you.html")
 def thank_you():
     return render_template("thank-you.html")
     
@@ -97,7 +97,7 @@ def sitemap():
 
 
     
-@app.route("/thank-you", methods=['GET', 'POST'])
+@app.route("/thank-you.html", methods=['GET', 'POST'])
 def sign_up():
     form_data = request.form
     first_name = request.form.get('fname')
@@ -109,7 +109,7 @@ def sign_up():
     contact_message(to, first_name, last_name, tel, msg)
     subscription_message(to, first_name)
     add_list_member(to, first_name, last_name)
-    return "All OK"
+    return render_template("thank-you.html")
 
 
 
