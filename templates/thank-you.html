@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/forms.css') }}">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	<!-- Awesome Fonts -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+
+	<script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+	<!-- Font Packages -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
+
+	<title>Thank You! - Vegan Panda</title>
+	<!-- FAVICON -->
+	<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
+
+</head>
+
+<body>
+
+
+<!-- TITLE -->
+	<div class="jumbotron">
+		<h1 id="header-title">Vegan Panda</h1>
+		<h3 id="header-subheading">Subheading</h3>
+	</div>
+
+<!-- NAVBAR -->
+<nav id="main_menu navbar" role="navigation">
+   	<div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+        	<span class="sr-only">Toggle navigation</span>
+           	<span class="icon-bar"></span>
+           	<span class="icon-bar"></span>
+           	<span class="icon-bar"></span>
+        </button>
+    </div>
+
+	<div class="container-fluid collapse navbar-collapse">
+		<ul class="menu">
+  			<li class='menu-item' role="presentation"><a href="index.html">Home</a></li>
+  			<li id="active" class='menu-item' role="presentation"><a href="about.html">About</a></li>
+  			<li class='menu-item' role="presentation"><a href="recipes.html">Recipes</a></li>
+  			<li class='menu-item' role="presentation"><a href="ingredients.html">Ingredients</a></li>
+  			<li class='menu-item' role="presentation"><a href="blog.html">Blog</a></li>
+		</ul>
+		<hr />
+	</div>	
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+
+<!-- MAIN CONTENT -->
+<div id="main_content">
+	<div class="col-sm-12">
+
+	<h2 class="intro">About Me...</h2>
+	<div class="intro_content">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<h2 class="intro"><a name="contact-us"></a>Contact Me...</h2>
+	<div class="intro_content">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<br />
+<!-- CONTACT FORM -->
+
+	<div id="contact-form">
+		<form name="htmlform" method="post" action="thank-you.html" autocomplete="on">
+
+     		<label for="title">title</label>    
+    		<p><select name="title" title="Please select a title." required="">
+      			<option disabled selected value> -- select an option -- </option>
+      			<option value="miss">Miss</option>
+        		<option value="mrs">Mrs</option>
+        		<option value="mr">Mr</option>
+      			<option value="ms">Ms</option>
+        		<option value="sir">Sir</option>
+        		<option value="dr">Dr</option>
+        		<option value="lady">Lady</option>
+        		<option value="lord">Lord</option>
+        		<option value="other">Other</option>
+    		</select></p>
+			<label for="forname">forename</label>
+      		<p><textarea rows='1' class="name" type="text" name="fname" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      
+      		<label for="surname">surname</label>
+      		<p><textarea rows='1' class="name" type="text" name="lname" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required></textarea></p>
+      
+     	 	<label for="email">email address</label>
+      		<p><textarea rows='1' class="name" type="email" name="email" maxlength="80" placeholder="name@example.com" required></textarea></p>
+
+      		<label for="tel">telephone number (optional)</label>
+      		<p><textarea  rows='1' class="name" type="text" name="tel" minlength="11" maxlength="13" placeholder="+44xxxxxxxxxx" onkeypress="return isNumberKey(event)" required></textarea></p>
+
+      		<label for="msg">your message...</label>
+      		<p><textarea id="msg" class="name form-control" name="comments" maxlength="500" rows="8" placeholder="Say hello..." required></textarea><h6 id="count_message">500 characters remaining</h6></p>
+
+      		<div class="wrapper">
+      			<input class="sub-btn" type="submit" value="Submit"> 
+      		</div>
+    	</form>
+  	</div>
+  <!-- END OF CONTACT FORM -->
+
+	</div>
+
+<!-- END OF MAIN CONTENT -->	
+</div>
+
+<!-- END OF CONTAINER DIV -->
+</div>	
+
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container">
+		<!-- Search Bar -->
+    	<div class="input-group">
+      		<input type="text" class="form-control" placeholder="Search for...">
+      		<span class="input-group-btn">
+        		<button class="btn btn-default" type="button">Go!</button>
+      		</span>
+      	</div>
+      	
+		<p class="social-icon" id="get-social">
+    		Lets get social!
+    	</p>
+    	<p class="social-icon">
+    		<a href="https://www.snapchat.com/add/aarti.khatri"><i class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a>
+    		<a href="https://www.instagram.com/AartiK1"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a>
+    		<a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i> </a>
+    		<a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i> </a>
+    		<a href="http://www.youtube.com"><i class="fa fa-3x fa-youtube-play" aria-hidden="true"></i> </a>
+    		<a href="https://uk.pinterest.com/aarti0161/"><i class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a>
+    		<a href="http://www.github.com/AartiK1"><i class="fa fa-3x fa-github" aria-hidden="true"></i> </a>
+    		<a href="mailto:support.veganpanda@pandamail.com?Subject=Email%20Title"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i> </a>
+    	</p>
+		<p class="alignleft"> <!-- Make text muted? -->
+			<a href="terms.html">Terms</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a> | <a id="active-ft" href="about.html#contact-us">Contact</a>
+		</p>
+		<p class="alignright">
+			Made in London &copy <a href="#">2016 by Aarti Khatri</a>
+		</p>
+	</div>
+	
+</footer>
+
+<!-- BACK TO TOP BUTTON -->
+<a href="#0" class="cd-top">Top</a>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
+
