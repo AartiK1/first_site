@@ -98,7 +98,7 @@ def sitemap():
 
     
 @app.route("/thank-you.html", methods=['GET', 'POST'])
-def sign_up():
+def contact_msg():
     form_data = request.form
     first_name = request.form.get('fname')
     last_name = request.form.get('lname')
@@ -107,11 +107,16 @@ def sign_up():
     msg = request.form.get('msg')
     contact_us_message(to, first_name, msg)
     contact_message(to, first_name, last_name, tel, msg)
-    subscription_message(to, first_name)
-    add_list_member(to, first_name, last_name)
     return render_template("thank-you.html")
 
-
-
+@app.route("/newsletter-sub.html", methods=['GET', 'POST'])
+def sign_up():
+    form_data = request.form
+    first_name = request.form.get('fname')
+    last_name = request.form.get('lname')
+    to = request.form.get('email')
+    subscription_message(to, first_name)
+    add_list_member(to, first_name, last_name)
+    return render_template("newsletter-sub.html")
 
 app.run()
