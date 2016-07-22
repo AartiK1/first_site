@@ -9,7 +9,7 @@
 form {
   margin: 0 auto;
   width: 450px;
-  font-family: 'roboto';
+  font-family: 'roboto', FontAwesome;
   color: #008080;
 }
 #contact-form textarea , #contact-form select{

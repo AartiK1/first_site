@@ -180,6 +180,7 @@ body {
 }
 .input-group input{
   color: rgba(0, 128, 128, 1);
+  font-family: 'roboto', FontAwesome;
 }
 /* Placeholder Color */
 .input-group>input::-webkit-input-placeholder {
