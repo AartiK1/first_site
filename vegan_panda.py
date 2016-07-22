@@ -31,7 +31,7 @@ def contact_message(to, first_name, last_name, tel, msg):
 
 
 
-def subscription_message(to, first_name):
+def subscription_message(to, full_name):
     return requests.post(
         "https://api.mailgun.net/v3/%s/messages" % MAILGUN_DOMAIN, 
         auth=("api", MAILGUN_API_KEY),
@@ -39,19 +39,19 @@ def subscription_message(to, first_name):
         data={
             "from": "Vegan Panda <mailgun@%s>" % MAILGUN_DOMAIN,
             "to": to,
-            "subject": "Welcome %s!" % first_name.split(' ').pop(0),
-            "text": "Hi %s!" % first_name.split(' ').pop(0),
+            "subject": "Welcome %s!" % full_name.split(' ').pop(0),
+            "text": "Hi %s!" % full_name.split(' ').pop(0),
             'html': '<html> Hi %s! <strong>content</strong>. Thank you for subscribing to our newsletter... Inline image here: <img src="cid:happy_panda.png">. <br /> If you wish to unsubscribe, click </html>' % first_name.split(' ').pop(0)
         })
 
 
-def add_list_member(to, first_name, last_name):
+def add_list_member(to, full_name):
     return requests.post(
         "https://api.mailgun.net/v3/lists/newsletter@%s/members" % MAILGUN_DOMAIN,
         auth=('api', MAILGUN_API_KEY),
         data={'subscribed': True,
               'address': to,
-              'name': first_name + last_name,
+              'name': full_name,
               'description': 'Newsletter Subscriber'})
              
             
@@ -112,11 +112,10 @@ def contact_msg():
 @app.route("/newsletter-sub.html", methods=['GET', 'POST'])
 def sign_up():
     form_data = request.form
-    first_name = request.form.get('fname')
-    last_name = request.form.get('lname')
+    full_name = request.form.get('name')
     to = request.form.get('email')
-    subscription_message(to, first_name)
-    add_list_member(to, first_name, last_name)
+    subscription_message(to, full_name)
+    add_list_member(to, full_name)
     return render_template("newsletter-sub.html")
 
 app.run()

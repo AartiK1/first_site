@@ -6,7 +6,7 @@
   font-size: 36px;
   font-family: 'Ruthie', cursive;
 }
-form {
+#contact-form form {
   margin: 0 auto;
   width: 450px;
   font-family: 'roboto', FontAwesome;
@@ -51,7 +51,7 @@ opacity: 0.5;
 }
 
  /*Submit Button*/ 
-#contact-form input[type=button], input[type=submit], input[type=reset] {
+#contact-form input[type=submit] {
     background-color: #008080;
     border-radius: 5px;
     color: white;
@@ -70,3 +70,71 @@ opacity: 0.5;
   color: black;
 }
 /* END OF CONTACT FORM */
+
+
+
+/* Newsletter Form */
+#news {
+  text-align: center;
+}
+  /* Titles */
+
+#newsletter-form form {
+  margin: 0 auto;
+  width: 1000px;
+  font-family: 'roboto', FontAwesome;
+  color: #008080;
+  display: inline-block;
+  text-align: center;
+}
+#newsletter-form form>textarea{
+  width:200px;
+  padding: 1% 1%;
+  margin:0 auto;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  text-align:left;
+  color: #008080;
+  background-color: white;
+}
+#newsletter-form form>textarea:focus , #newsletter-form form>textarea:hover{
+    border: 3px solid #008080;
+}
+
+/* Placeholder Color */
+#newsletter-form form>textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #008080 !important;
+opacity: 0.5;
+}
+#newsletter-form form>textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #008080 !important; 
+opacity: 0.5; 
+}
+#newsletter-form form>textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #008080 !important;
+opacity: 0.5;  
+}
+#newsletter-form form>textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #008080 !important; 
+opacity: 0.5; 
+}
+
+ /*Submit Button*/ 
+.sub-btn-sub input[type=submit] {
+    background-color: #008080;
+    border-radius: 5px;
+    color: white;
+    padding: 1% 1%;
+    text-decoration: none;
+    cursor: pointer;
+    width:20%;
+    font-size:18px;
+    margin-top: -10px;
+}
+.wrapper {
+  text-align: center;
+}
+.sub-btn:hover{
+  color: black;
+}
+/* END OF NEWSLETTER FORM */
