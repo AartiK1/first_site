@@ -317,3 +317,34 @@ color: rgba(0, 128, 128, 0.7) !important;
   }
 }
 /* END OF BACK TO TOP BUTTON */
+
+@media only screen and (max-width: 464px) {
+  #main_content {
+    margin-left: 200px;
+  }
+}
+@media only screen and (min-width: 464px) {
+  #main_content {
+    margin-left: 180px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  #main_content {
+    margin-left: 190px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #main_content {
+    margin-left: 130px;
+  }
+}
+@media only screen and (min-width: 840px) {
+  #main_content {
+    margin-left: 100px;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  #main_content {
+    margin-left: 0px;
+  }
+}
