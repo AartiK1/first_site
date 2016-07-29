@@ -8,7 +8,8 @@ body {
 
 /* PAGE HEADING */
 .jumbotron {
-	background-color: #008080;
+	background-color: #81D8D0;
+  
 }
 #header-title {
 	font-family: 'Amatic SC', cursive;
@@ -35,6 +36,7 @@ body {
 	font-weight: bold;
 }
 .intro_content {
+  color:  #008080;
 
 }
 
@@ -162,28 +164,30 @@ li:hover > ul.drop-menu li {
 
 /* Color Properties */
 nav > ul.nav > li>a {
-  color: #3dbeb9;
+  color: #81D8D0;
+  /* OR CHNAGE TO color: #008080; */
 }
 nav > ul.nav > li:hover >a {
-  color: white;
+  color: rgba(0, 128, 128, 1);
 }
 ul.nav ul.drop-menu li {
-  background: rgba(0, 128, 128, 0.8);
-  color: rgba(255, 255, 255, 0.7);
+  background: rgba(129,216,208 , 0.8);
+  color: rgba(0, 128, 128, 1);
 }
 ul.nav ul.drop-menu li:hover {
-  background: rgba(0, 128, 128, 0.8);
+  background: rgba(129,216,208 , 0.8);
   text-decoration: none;
+  color: white;
 }
 ul.nav .hvr-shutter-out-horizontal:before {
-  background: rgba(0, 128, 128, 1); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8));
+  background: rgba(129,216,208 , 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8));
 }
 ul.nav .drop.hvr-shutter-out-horizontal:before {
-  background: rgba(61, 190, 185, 0.7);
+  background: rgba(0, 128, 128, 0.8);
 }
 
 /* Dropdown Animation for fade in */
@@ -313,16 +317,18 @@ li:hover > ul.drop-menu a:nth-child(7) li{
 /* Footer General */
 .alignleft {
   float: left;
+  color: #008080;
 }
 .alignright {
   float: right;
+  color: #008080;
 }
 .alignleft a , .alignright a{
-  color: black;
   text-decoration: none;
+  color: #008080;
 }
 .footer {
-	background-color: rgba(0, 128, 128, 1);
+	background-color: rgba(129,216,208 , 1);
 	margin-top: 20px;
 	padding-top: 10px;
 	display: block;
@@ -367,7 +373,7 @@ li:hover > ul.drop-menu a:nth-child(7) li{
 }
 .social-icon .fa:hover , .social-icon .fa:focus , .social-icon .fa:active{
   /*font-size: 330%;*/
-  color: #3dbeb9;
+  color:#008080;
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
@@ -384,7 +390,7 @@ li:hover > ul.drop-menu a:nth-child(7) li{
 }
 .input-group-btn>button:hover {
   /* Add some parameters?? */
-  background-color: #3dbeb9;
+  background-color: #008080;
   color: white;
 }
 .input-group input{
@@ -430,7 +436,7 @@ color: rgba(0, 128, 128, 0.7) !important;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
-  background: rgba(61,190,185, 0.7) url(cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(0, 128, 128, 0.7) url(cd-top-arrow.svg) no-repeat center 50%;
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
@@ -448,7 +454,7 @@ color: rgba(0, 128, 128, 0.7) !important;
 }
 .cd-top:hover {
   opacity: 1;
-  background: #309894 url(cd-top-arrow-b.png) no-repeat center 50%;
+  background: rgba(0, 128, 128, 0.7) url(cd-top-arrow-b.png) no-repeat center 50%;
 }
 
 @-webkit-keyframes cd-top {
