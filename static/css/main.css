@@ -1,64 +1,6 @@
 /* NAVBAR */
 
-/* Collapse/burger button bar color */
-.navbar-toggle>span {
-  background-color: white;
-} 
-/*Burger/Collapse button */
-button.navbar-toggle {
-  background-color: #008080;
-} 
-.navbar-collapse {
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
 
-#main_menu {
-  width: 100%;
-  height: 3em;
-  display: inline-block;
-  z-index:200;
-  text-align:center;
-}
-#main_menu .container-fluid{
-  background-color: white;
-  min-height:3em;
-  width: 100%;
-  display: inline-block;
-}
-.menu-item {
-  padding: 0 0 5px 0;
-  display: inline-block;
-  min-height:3em;
-  margin:0;
-  overflow: hidden;
-  width: 200px;
-}
-.menu-item>a {
-  font-size: 25px;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  width:100%;
-  height: 100%;
-  margin-top:0;
-  font-family: 'Ruthie';
-  font-size: 45px;
-  color: #008080;
-}
-#active>a {
-  font-weight: bold;
-}
-.menu>li:hover a{
-  font-weight: bolder;
-}
-/* Line under navbar */
-.navbar-collapse hr{
-  border-color: rgba(0, 128, 128, 0.2);
-}
-
-/* END OF NAVBAR */
 
 body {
 	font-family: 'roboto';
@@ -69,7 +11,7 @@ body {
 	background-color: rgba(0, 128, 128, 1);
 }
 #header-title {
-	font-family: 'Ruthie', cursive;
+	font-family: 'Amatic SC', cursive;
 	text-align: center;
 	font-weight: 900;
 	font-size: 82px;
@@ -77,7 +19,7 @@ body {
 
 }
 #header-subheading {
-	font-family: 'Ruthie', cursive;
+	font-family: 'Amatic SC', cursive;
 	text-align: center;
 	font-weight: 300;
 	font-size: 45px;
@@ -88,7 +30,7 @@ body {
 /* MAIN CONTENT */
 .intro {
 	color: #008080;
-	font-family: 'Ruthie', cursive;
+	font-family: 'Amatic SC', cursive;
 	font-size: 45px;
 	font-weight: bold;
 }
@@ -96,6 +38,272 @@ body {
 
 }
 
+/* NAVBAR */
+.nav {
+  background-color: white;
+  z-index: 300;
+}
+nav {
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: -50px;
+  font-family: 'roboto' , 'Amatic SC' , cursive , 'roboto';
+ /* font-size: 180%;*/
+}
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: white;
+  width: 100%;
+}
+nav > ul > li {
+  float: left;
+  width: 20%;
+  height: 40px;
+  line-height: 65px;
+  position: relative;
+  z-index: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+nav>ul>li>a {
+  height: 40px;
+  margin-top: -20px;
+  padding: 0;
+}
+
+nav > ul > li:hover {
+  background: white;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border-radius:0px;
+}
+
+#active>a , #active-res{
+  font-weight: bold;
+}
+
+a:hover > #active-res{
+  color: white;
+}
+
+/* Shutter Out Horizontal General */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover a, .hvr-shutter-out-horizontal:focus a, .hvr-shutter-out-horizontal:active a {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/* DROP DOWN MENU */
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+}
+
+ul.drop-menu a:last-child li {
+  border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+  display: none;
+}
+
+li:hover > ul.drop-menu li {
+  display: block;
+}
+
+/* Color Properties */
+nav > ul.nav > li>a {
+  color: #3dbeb9;
+}
+nav > ul.nav > li:hover >a {
+  color: white;
+}
+ul.nav ul.drop-menu li {
+  background: rgba(0, 128, 128, 0.8);
+  color: rgba(255, 255, 255, 0.7);
+}
+ul.nav ul.drop-menu li:hover {
+  background: rgba(0, 128, 128, 0.8);
+}
+ul.nav .hvr-shutter-out-horizontal:before {
+  background: rgba(0, 128, 128, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 128, 128, 1) , rgba(0, 128, 128, 0.8));
+}
+ul.nav .drop.hvr-shutter-out-horizontal:before {
+  background: rgba(61, 190, 185, 0.7);
+}
+
+/* Dropdown Animation for fade in */
+li:hover > ul.drop-menu {
+  -webkit-perspective:1000px;
+  perspective:1000px;
+}
+li:hover > ul.drop-menu a li{
+  opacity: 0;
+/*  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+}
+
+/* keyframes used to change opacity, rotation & translation during the animation */
+@-webkit-keyframes drop-menu {
+  /* start of animation properties*/
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+@keyframes drop-menu {
+  /* start of animation properties */
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
+li:hover > ul.drop-menu a:nth-child(1) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(2) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(3) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(4) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(5) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(6) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu a:nth-child(7) li{
+  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 2100ms;
+  animation-duration: 2100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* End of animation */
+
+
+
+/* END OF NAVBAR */
 
 
 
@@ -133,7 +341,7 @@ body {
   font-size: 16px;
 }
 #get-social{
-  font-family: 'Ruthie', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 32px;
   font-weight: bold;
   word-spacing: 8px;
@@ -158,7 +366,7 @@ body {
 }
 .social-icon .fa:hover , .social-icon .fa:focus , .social-icon .fa:active{
   /*font-size: 330%;*/
-  color: black;
+  color: #3dbeb9;
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
@@ -221,7 +429,7 @@ color: rgba(0, 128, 128, 0.7) !important;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
-  background: rgba(0, 128, 128, 0.8) url(cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(61,190,185, 0.7) url(cd-top-arrow.svg) no-repeat center 50%;
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
@@ -239,7 +447,7 @@ color: rgba(0, 128, 128, 0.7) !important;
 }
 .cd-top:hover {
   opacity: 1;
-  background: rgba(0, 128, 128, 0.8) url(cd-top-arrow-b.png) no-repeat center 50%;
+  background: #309894 url(cd-top-arrow-b.png) no-repeat center 50%;
 }
 
 @-webkit-keyframes cd-top {
