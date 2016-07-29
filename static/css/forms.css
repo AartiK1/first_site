@@ -80,13 +80,13 @@ opacity: 0.5;
   left:1%;
   margin-top: 20px;
   font-family: 'roboto';
-  color: #fdacab;
+  color: #008080;
   width: 450px;
 }
 
 #news-title{
   margin-bottom: 10px;
-  color: #fdacab;
+  color: #008080;
   position: relative;
   left: 6%;
 }
@@ -132,19 +132,21 @@ opacity: 0.5;
 
 /*Submit Button*/ 
 #newsletter-form input[type=button], input[type=submit], input[type=reset] {
-    background-color: #fdacab;
+    background-color: #008080;
     border-radius: 5px;
     color: white;
-    padding: 2% 2%;
+    padding: 1% 2%;
     text-decoration: none;
     margin: 1% 4%;
     cursor: pointer;
     width:30%;
-    font-size:18px;
+    font-size:25px;
     display: inline-block;
+    font-family: 'Amatic SC' , cursive;
+    font-weight: bold;
 }
 #newsletter-form .sub-btn:hover{
-  background-color: #3dbeb9;
+  background-color: #3dbeb9 ;
 }
 
 

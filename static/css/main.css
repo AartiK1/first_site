@@ -8,7 +8,7 @@ body {
 
 /* PAGE HEADING */
 .jumbotron {
-	background-color: rgba(0, 128, 128, 1);
+	background-color: #008080;
 }
 #header-title {
 	font-family: 'Amatic SC', cursive;
@@ -48,7 +48,7 @@ nav {
   text-align: center;
   margin-bottom: 5%;
   margin-top: -50px;
-  font-family: 'roboto' , 'Amatic SC' , cursive , 'roboto';
+  font-family: 'roboto' , 'Amatic SC' , cursive ;
  /* font-size: 180%;*/
 }
 nav > ul {
@@ -173,6 +173,7 @@ ul.nav ul.drop-menu li {
 }
 ul.nav ul.drop-menu li:hover {
   background: rgba(0, 128, 128, 0.8);
+  text-decoration: none;
 }
 ul.nav .hvr-shutter-out-horizontal:before {
   background: rgba(0, 128, 128, 1); /* For browsers that do not support gradients */
@@ -383,7 +384,7 @@ li:hover > ul.drop-menu a:nth-child(7) li{
 }
 .input-group-btn>button:hover {
   /* Add some parameters?? */
-  background-color: black;
+  background-color: #3dbeb9;
   color: white;
 }
 .input-group input{
