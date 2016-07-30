@@ -65,28 +65,41 @@
 		<h3 id="header-subheading">Subheading</h3>
 	</div>
 
-<!-- NAVBAR -->
-<nav id="main_menu navbar" role="navigation">
-   	<div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-        	<span class="sr-only">Toggle navigation</span>
-           	<span class="icon-bar"></span>
-           	<span class="icon-bar"></span>
-           	<span class="icon-bar"></span>
-        </button>
-    </div>
-
-	<div class="container-fluid collapse navbar-collapse">
-		<ul class="menu">
-  			<li class='menu-item' role="presentation"><a href="index.html">Home</a></li>
-  			<li class='menu-item' role="presentation"><a href="about.html">About</a></li>
-  			<li class='menu-item' role="presentation"><a href="recipes.html">Recipes</a></li>
-  			<li class='menu-item' role="presentation"><a href="ingredients.html">Ingredients</a></li>
-  			<li class='menu-item' role="presentation"><a href="blog.html">Blog</a></li>
-		</ul>
-		<hr />
-	</div>	
-</nav>
+<!-- NAVBAR --> 
+  <nav>
+    <ul class="nav">
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
+        <ul class="drop-menu">
+          <a href="about.html#contact-us"><li class='hvr-shutter-out-horizontal drop' role="presentation">Contact</li></a>
+        </ul>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
+      </li>
+      <li id="active" class='hvr-shutter-out-horizontal' id="type1" role="presentation"><a href="recipes.html">Recipes</a>
+        <ul class="drop-menu">
+          <a href="recipes-breakfast.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Breakfast</li></a>
+          <a href="recipes-lunch.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Lunch</li></a>
+          <a href="recipes-dinner.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Dinner</li></a>
+          <a href="recipes-dessert.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Dessert</li></a>
+          <a href="recipes-snacks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Snacks</li></a>
+          <a href="recipes-drinks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Drinks</li></a>
+          <a href="recipes-staples.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Pantry Staples</li></a>
+        </ul>
+      </li>
+      <li class='hvr-shutter-out-horizontal' id="type2" role="presentation"><a href="ingredients.html">Ingredients</a>
+        <ul class="drop-menu">
+          <a href="ingredients-korean.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Korean</li></a>
+          <a href="ingredients-japanese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Japanese</li></a>
+          <a href="ingredients-chinese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Chinese</li></a>
+          <a href="ingredients-indian.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Indian</li></a>
+          <a href="ingredients-misc.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Miscellaneous</li></a>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- END OF NAVBAR -->
 
 <!-- CONTENT -->
 <div class="container">
