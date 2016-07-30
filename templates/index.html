@@ -184,12 +184,14 @@
 <footer class="footer">
 	<div class="container">
 		<!-- Search Bar -->
+		<form id="frmSearch" method="get" action="default.html" >
     	<div class="input-group">
-      		<input type="text" class="form-control" placeholder= "&#xf002; Search for..." />
+      		<input id="txtsearch" type="text" class="form-control" placeholder= "&#xf002; Search for..." />
       		<span class="input-group-btn">
-        		<button class="btn btn-default" type="button">Go!</button>
+        		<input class="btn btn-default" type="submit" value="Go!" />
       		</span>
       	</div>
+      	</form>
       	
 		<p class="social-icon" id="get-social">
     		Lets get social!
@@ -218,6 +220,13 @@
 <a href="#0" class="cd-top">Top</a>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
 
 </body>
 </html>
