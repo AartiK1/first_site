@@ -8,7 +8,7 @@
 }
 #contact-form form {
   margin: 0 auto;
-  width: 450px;
+  width: 60%;
   font-family: 'roboto', FontAwesome;
   color: #81D8D0;
 }
@@ -21,6 +21,7 @@
   text-align:left;
   color: #008080;
   background-color: white;
+  font-family: 'FontAwesome' , 'roboto' , cursive;
 }
 #contact-form textarea:focus , #contact-form textarea:hover , #contact-form select:focus , #contact-form select:hover{
     border: 3px solid #008080;
@@ -54,10 +55,11 @@ opacity: 0.5;
 }
 
  /*Submit Button*/ 
-#contact-form input[type=button], input[type=submit], input[type=reset]{
-    background-color: #008080;
+#contact-form input[type=button], #contact-form input[type=submit], #contact-form input[type=reset]{
+    background-color: #81D8D0;
     border-radius: 5px;
-    color: white;
+    border: 1px solid #81D8D0;
+    color: black;
     padding: 1% 2%;
     text-decoration: none;
     margin: 3%;
@@ -65,14 +67,28 @@ opacity: 0.5;
     width:30%;
     font-size:27px;
     display: inline-block;
+    font-family: 'Amatic SC' , cursive;
+    font-weight: bold;
 }
 .wrapper {
   text-align: center;
+  margin-top: 20px;
 }
-.sub-btn:hover{
-  color: black;
-  background-color: #81D8D0;
+#contact-form .sub-btn:hover{
+  color: white;
+  background-color: #008080;
+  border: 1px solid #008080;
 }
+#contact-news{
+  text-align: center;
+  margin: 10px auto;
+  width: 5%;
+  /*margin-bottom: px;*/
+}
+/*#contact-news input[type=checkbox] , #contact-news input[type=submit] , #contact-news input[type=reset]{
+  background-color: red;
+}*/
+
 /* END OF CONTACT FORM */
 
 
@@ -102,43 +118,44 @@ opacity: 0.5;
   display: block;
 }
 
-#newsletter-form textarea{
+.newsletter-form textarea{
   width:40%;
   padding: 2% 2%;
-  border: 2px solid #81D8D0;
+  border: 2px solid #008080;
   border-radius: 5px;
   text-align:left;
-  color: #81D8D0;
+  color: #008080;
   background-color: white;
 }
-#newsletter-form textarea:focus , #newsletter-form textarea:hover{
-    border: 3px solid #81D8D0;
+.newsletter-form textarea:focus , .newsletter-form textarea:hover{
+    border: 3px solid #008080;
 }
 
 /* Placeholder Color */
-#newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
-color: #81D8D0 !important;
+.newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #008080 !important;
 opacity: 0.5;
 }
-#newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
-color: #81D8D0 !important; 
+.newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #008080 !important; 
 opacity: 0.5; 
 }
-#newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
-color: #81D8D0 !important;
+.newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #008080 !important;
 opacity: 0.5;  
 }
-#newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
-color: #81D8D0 !important; 
+.newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #008080 !important; 
 opacity: 0.5; 
 }
 
 
 /*Submit Button*/ 
-#newsletter-form input[type=button], input[type=submit], input[type=reset] {
-    background-color: #008080;
+.newsletter-form input[type=button], .newsletter-form input[type=submit], .newsletter-form input[type=reset] {
+    background-color: #81D8D0;
     border-radius: 5px;
-    color: white;
+    border: 1px solid #81D8D0;
+    color: black;
     padding: 1% 2%;
     text-decoration: none;
     margin: 1% 4%;
@@ -149,9 +166,56 @@ opacity: 0.5;
     font-family: 'Amatic SC' , cursive;
     font-weight: bold;
 }
-#newsletter-form .sub-btn:hover{
-  background-color: #81D8D0;
+.newsletter-form .sub-btn:hover{
+  background-color: #008080;
+  color: white;
+  border: 1px solid #008080;
 }
 
 
 /* END OF SOCIAL RIGHT NAVBAR */
+
+/* Footer Newsletter */
+/* Centers form on page */
+#news-ft>div{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+#news-ft{
+  margin: 0 auto;
+
+}
+#news-title-footer{
+  margin-bottom: 10px;
+  color:  #81D8D0;
+}
+#news-hide{
+  display: none;
+}
+
+/* End of Footer Newsletter */
+
+
+@media screen and (max-width: 768px) {
+  /* Hide left nav newletter form on small screens */
+  .news{
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Hide Footer Newsletter on large screens */
+  #news-ft{
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  #contact-form form {
+    margin: 0px ;
+    width: 100%;
+
+  }

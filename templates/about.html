@@ -71,9 +71,9 @@
 <!-- NAVBAR --> 
   <nav>
     <ul class="nav">
-      <li id="active" class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
       </li>
-      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
+      <li id="active" class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
         <ul class="drop-menu">
           <a href="about.html#contact-us"><li class='hvr-shutter-out-horizontal drop' role="presentation">Contact</li></a>
         </ul>
@@ -109,7 +109,7 @@
 <div class="container">
 
 	<!-- LEFT NAV BAR - NEWSLETTER FORM -->
-    <div class='col-sm-1'>
+    <div class='col-sm-1 news'>
       <nav id='left_nav'>
         <div id="newsletter-form">
           <h3 id="news-title">Newsletter</h3>
@@ -125,9 +125,7 @@
 
 
 <!-- MAIN CONTENT -->
-<div class="col-sm-11">
-<div id="main_content">
-	
+<div id="main_content" class="col-sm-11">
 
 	<h2 class="intro">About Me...</h2>
 	<div class="intro_content">
@@ -183,6 +181,8 @@
       		<label for="msg">your message...</label>
       		<p><textarea id="msg" class="name form-control" name="comments" placeholder="&#xf075; Say hello..." maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
 
+          <input id="contact-news" type="checkbox" name="sub" value="subcribe"><em>Subscribe to our newsletter to be the first to know about our latest articles and resources.</em></input>
+
       		<div class="wrapper">
       			<input class="sub-btn" type="submit" value="Submit"> 
       		</div>
@@ -190,8 +190,18 @@
   	</div>
   <!-- END OF CONTACT FORM -->
 
-
-
+<!-- SMALL SCREEN NEWSLETTER FORM -->
+  <div class="newsletter-form row" id="news-ft">
+  <div class="col-sm-12 col-xs-12">
+    <h2 class="intro" id="news-title-footer"><a name="newsletter"></a>Newsletter</h2>
+    <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+          <textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea>
+          <textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea>
+        <input class="sub-btn" type="submit" value="Subscribe">
+      </form>
+  </div>
+  </div>
+  <!-- END OF NEWSLETTER FORM -->
 
 	</div>
 
@@ -200,6 +210,20 @@
 
 <!-- END OF CONTAINER DIV -->
 </div>	
+
+
+<!-- SMALL SCREEN NEWSLETTER FORM -->
+  <div class="newsletter-form row" id="news-ft">
+  <div class="col-sm-12 col-xs-12">
+    <h2 class="intro" id="news-title-footer"><a name="newsletter"></a>Newsletter</h2>
+    <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+          <textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea>
+          <textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea>
+        <input class="sub-btn" type="submit" value="Subscribe">
+      </form>
+  </div>
+  </div>
+  <!-- END OF NEWSLETTER FORM -->
 
 <!-- FOOTER -->
 <footer class="footer">
