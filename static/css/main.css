@@ -35,8 +35,10 @@ body {
 	font-size: 45px;
 	font-weight: bold;
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 .intro_content {
   color:  #008080;
+  font-family: 'roboto', 'nanum pen script', 'arial', cursive;
 
 }
 

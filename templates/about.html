@@ -3,7 +3,7 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
@@ -25,9 +25,35 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
 
+
+  <!-- WIthout Python/Flask -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href='../static/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href='../static/css/main.css'>
+  <link rel="stylesheet" type="text/css" href='../static/css/forms.css'>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script type="text/javascript" src='../static/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src='../static/js/main.js'></script>
+  
+  <!-- Awesome Fonts -->
+  <link rel="stylesheet" href='../static/font-awesome/css/font-awesome.min.css'>
+
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+  <!-- Font Packages -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
 	<title>About - Vegan Panda</title>
 	<!-- FAVICON -->
 	<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
+  <link rel="icon" href='favicon.ico' sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
 
 </head>
 
@@ -40,28 +66,42 @@
 		<h3 id="header-subheading">Subheading</h3>
 	</div>
 
-<!-- NAVBAR -->
-<nav id="main_menu navbar" role="navigation">
-   	<div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-        	<span class="sr-only">Toggle navigation</span>
-           	<span class="icon-bar"></span>
-           	<span class="icon-bar"></span>
-           	<span class="icon-bar"></span>
-        </button>
-    </div>
+<!-- NAVBAR --> 
+  <nav>
+    <ul class="nav">
+      <li id="active" class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
+        <ul class="drop-menu">
+          <a href="about.html#contact-us"><li class='hvr-shutter-out-horizontal drop' role="presentation">Contact</li></a>
+        </ul>
+      </li>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
+      </li>
+      <li class='hvr-shutter-out-horizontal' id="type1" role="presentation"><a href="recipes.html">Recipes</a>
+        <ul class="drop-menu">
+          <a href="recipes-breakfast.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Breakfast</li></a>
+          <a href="recipes-lunch.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Lunch</li></a>
+          <a href="recipes-dinner.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Dinner</li></a>
+          <a href="recipes-dessert.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Dessert</li></a>
+          <a href="recipes-snacks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Snacks</li></a>
+          <a href="recipes-drinks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Drinks</li></a>
+          <a href="recipes-staples.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Pantry Staples</li></a>
+        </ul>
+      </li>
+      <li class='hvr-shutter-out-horizontal' id="type2" role="presentation"><a href="ingredients.html">Ingredients</a>
+        <ul class="drop-menu">
+          <a href="ingredients-korean.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Korean</li></a>
+          <a href="ingredients-japanese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Japanese</li></a>
+          <a href="ingredients-chinese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Chinese</li></a>
+          <a href="ingredients-indian.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Indian</li></a>
+          <a href="ingredients-misc.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Miscellaneous</li></a>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- END OF NAVBAR -->
 
-	<div class="container-fluid collapse navbar-collapse">
-		<ul class="menu">
-  			<li class='menu-item' role="presentation"><a href="index.html">Home</a></li>
-  			<li id="active" class='menu-item' role="presentation"><a href="about.html">About</a></li>
-  			<li class='menu-item' role="presentation"><a href="recipes.html">Recipes</a></li>
-  			<li class='menu-item' role="presentation"><a href="ingredients.html">Ingredients</a></li>
-  			<li class='menu-item' role="presentation"><a href="blog.html">Blog</a></li>
-		</ul>
-		<hr />
-	</div>	
-</nav>
 
 <!-- CONTENT -->
 <div class="container">
@@ -92,21 +132,18 @@
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+	
+    <p> <span lang="ko" xml:lang="ko">떡볶이</span></p>
+
+    <p>You'd say that in Chinese as <span lang="zh-Hans">中国科学院文献情报中心</span>.</p>
+
+    
 	</div>
 
 	<h2 class="intro"><a name="contact-us"></a>Contact Me...</h2>
 	<div class="intro_content">
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			If you have any questions, suggestions, or just want to say hi, I'd love to hear from you! Fill in the form below and I'll get back to you when I can.
 		</p>
 	</div>
 
@@ -139,7 +176,7 @@
       		<p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; name@example.com" maxlength="80" required></textarea></p>
 
       		<label for="tel">telephone number (optional)</label>
-      		<p><textarea  rows='1' class="name" type="text" name="tel" placeholder="&#xf095; +44xxxxxxxxxx" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" required></textarea></p>
+      		<p><textarea  rows='1' class="name" type="text" name="tel" placeholder="&#xf095; +44xxxxxxxxxx" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" ></textarea></p>
 
       		<label for="msg">your message...</label>
       		<p><textarea id="msg" class="name form-control" name="comments" placeholder="&#xf075; Say hello..." maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
