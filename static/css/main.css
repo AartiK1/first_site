@@ -328,10 +328,14 @@ li:hover > ul.drop-menu a:nth-child(7) li{
 .alignleft {
   float: left;
   color: #008080;
+  position: relative;
+  left: -110px;
 }
 .alignright {
   float: right;
   color: #008080;
+  position: relative;
+  right: -70px;
 }
 .alignleft a , .alignright a{
   text-decoration: none;
@@ -631,7 +635,7 @@ color: rgba(0, 128, 128, 0.7) !important;
 
   .container {
     width: 85%;
-    margin-left: 5%;
+    margin-left: 12%;
     margin-right: 5%;
   }
 
@@ -645,7 +649,15 @@ color: rgba(0, 128, 128, 0.7) !important;
     margin-left: 20%;
     margin-right: 20%;
   }
-
+  .news{
+    display: none;
+  }
+  .container {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -667,5 +679,5 @@ color: rgba(0, 128, 128, 0.7) !important;
     margin-right: 2%;
     
   }
-
+  
 }

@@ -1,5 +1,29 @@
+
+
 // FUNCTIONS TO BE RUN AFTER PAGE HAS LOADED
 $(document).ready(function() {   
+
+/* LHS nav scrolls only to top of footer. Doesn't overlap */
+var doc = $(document); 
+doc.scroll(function () {
+     // make sure to wrap yours entire footer in some css selector
+    var footer = $('#whole-ft');
+    var p = $('#nav-fixed');
+    var s = $('#left-nav-position');
+
+    var top = doc.scrollTop() + s.offset().top  * 1.95 + p.height();
+    var footerTop = footer.offset().top;
+
+    var offset = footerTop - top;
+
+    if (offset < 0) {
+        p.css({'margin-top': '' + offset + 'px'});
+    } else {
+        p.css({'margin-top': 0});
+    }
+});
+/* End of LHS nav scroll */
+
 
 //TEXT CHARACTER COUNT
 var text_max = 500;

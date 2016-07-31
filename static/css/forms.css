@@ -178,29 +178,29 @@ opacity: 0.5;
   background-color: white;
   font-family: 'FontAwesome' , 'roboto';
 }
-#newsletter-form-nav textarea:focus , #newsletter-form-nav textarea:hover{
+.newsletter-form textarea:focus , .newsletter-form textarea:hover , #news-ft textarea:focus , #news-ft textarea:hover{
     border: 3px solid #008080;
 }
 
 /* Placeholder Color */
-#newsletter-form-nav textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+.newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
 color: #008080 !important;
 opacity: 0.5;
 }
-#newsletter-form-nav textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+.newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
 color: #008080 !important; 
 opacity: 0.5; 
 }
-#newsletter-form-nav textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+.newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
 color: #008080 !important;
 opacity: 0.5;  
 }
-#newsletter-form-nav textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+.newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
 color: #008080 !important; 
 opacity: 0.5; 
 }
 /*Submit Button*/ 
-#newsletter-form-nav input[type=button], #newsletter-form-nav input[type=submit], #newsletter-form-nav input[type=reset] {
+.newsletter-form input[type=button], .newsletter-form input[type=submit], .newsletter-form input[type=reset] {
     background-color: #81D8D0;
     border-radius: 5px;
     border: 1px solid #81D8D0;
@@ -215,7 +215,7 @@ opacity: 0.5;
     font-family: 'Amatic SC' , cursive;
     font-weight: bold;
 }
-#newsletter-form-nav .sub-btn:hover{
+.newsletter-form .sub-btn:hover{
   background-color: #008080;
   color: white;
   border: 1px solid #008080;
@@ -242,12 +242,27 @@ opacity: 0.5;
 #news-hide{
   display: none;
 }
+#news-ft textarea{
+  width:30%;
+  padding: 2% 2%;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  text-align:left;
+  color: #008080;
+  background-color: white;
+  font-family: 'FontAwesome' , 'roboto';
+}
+#news-ft input[type=button], #news-ft input[type=submit], #news-ft input[type=reset] {
+    margin: 0% 4% 4% 0%;
+    position: relative;
+    bottom: 15px;
+}
 /* END OF FOOTER NEWSLETTER */
 
 
 @media screen and (max-width: 768px) {
   /* Hide left nav newletter form on small screens */
-  .news{
+  #newsletter-form-nav{
     display: none !important;
   }
 }

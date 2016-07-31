@@ -107,6 +107,30 @@
 <!-- CONTENT -->
 <div class="container">
 
+  <!-- LEFT NAV BAR - NEWSLETTER FORM -->
+    <div id="left-nav-position">
+    <div class='col-sm-1 news' id="nav-fixed">
+      <nav id='left_nav'>
+        <div class="newsletter-form" id="newsletter-form-nav">
+          <h3 id="news-title">Newsletter</h3>
+          <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+            <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
+            <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
+            <input class="sub-btn" type="submit" value="Subscribe">
+          </form>
+        </div>
+        <p id="get-social-nav">Lets get social!</p>
+        <div id="social-icon-nav">
+        <p><a href="https://www.snapchat.com/add/aarti.khatri"><i title="Snapchat" class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a></p>
+        <p><a href="https://www.instagram.com/AartiK1"><i title="Instagram" class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a></p>
+        <p><a href="https://uk.pinterest.com/aarti0161/"><i title="Pinterest" class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a></p>
+        </div>
+      </nav>
+    </div>
+    </div>
+    <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
+
+
 <!-- MAIN CONTENT -->
 <div id="main_content">
 	<div class="col-sm-12">
@@ -151,7 +175,7 @@
   <!-- END OF NEWSLETTER FORM -->
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" id="whole-ft">
 	<div class="container">
 		<!-- Search Bar -->
     	<div class="input-group">

@@ -109,9 +109,10 @@
 <div class="container">
 
 	<!-- LEFT NAV BAR - NEWSLETTER FORM -->
-    <div class='col-sm-1 news'>
+    <div id="left-nav-position">
+    <div class='col-sm-1 news' id="nav-fixed">
       <nav id='left_nav'>
-        <div id="newsletter-form-nav">
+        <div class="newsletter-form" id="newsletter-form-nav">
           <h3 id="news-title">Newsletter</h3>
           <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
             <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
@@ -126,6 +127,7 @@
         <p><a href="https://uk.pinterest.com/aarti0161/"><i title="Pinterest" class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a></p>
         </div>
       </nav>
+    </div>
     </div>
     <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
 
@@ -232,7 +234,7 @@
   <!-- END OF NEWSLETTER FORM -->
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" id="whole-ft">
 	<div class="container">
 		<!-- Search Bar -->
     	<div class="input-group">
