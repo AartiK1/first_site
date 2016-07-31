@@ -1,3 +1,7 @@
+.fotorama>img{
+  height: 70px;
+}
+
 /* MAIN BODY */
 
 body {
@@ -328,14 +332,11 @@ li:hover > ul.drop-menu a:nth-child(7) li{
 .alignleft {
   float: left;
   color: #008080;
-  position: relative;
-  left: -110px;
+
 }
 .alignright {
   float: right;
   color: #008080;
-  position: relative;
-  right: -70px;
 }
 .alignleft a , .alignright a{
   text-decoration: none;
@@ -607,11 +608,6 @@ color: rgba(0, 128, 128, 0.7) !important;
 
 
 @media only screen and (max-width: 930px) {
-  .abt-img {
-    width: 20%;
-    display: inline-block;
-  }
-
   .block {
     height: 120px;
   }
@@ -642,13 +638,6 @@ color: rgba(0, 128, 128, 0.7) !important;
 }
 
 @media only screen and (max-width: 650px) {
-  .abt-img {
-    padding: 0px; 
-  }
-  .abt-img img{
-    margin-left: 20%;
-    margin-right: 20%;
-  }
   .news{
     display: none;
   }
