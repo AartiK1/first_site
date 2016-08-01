@@ -205,11 +205,11 @@ ul.nav .drop.hvr-shutter-out-horizontal:before {
 }
 
 /* Dropdown Animation for fade in */
-li:hover > ul.drop-menu {
+li:hover > ul.drop-menu#type1 {
   -webkit-perspective:1000px;
   perspective:1000px;
 }
-li:hover > ul.drop-menu a li{
+li:hover > ul.drop-menu#type1 a li{
   opacity: 0;
 /*  -webkit-animation-name: drop-menu;
   animation-name: drop-menu;
@@ -222,7 +222,7 @@ li:hover > ul.drop-menu a li{
 }
 
 /* keyframes used to change opacity, rotation & translation during the animation */
-@-webkit-keyframes drop-menu {
+@-webkit-keyframes type1 {
   /* start of animation properties*/
   0% {
     opacity: 0;
@@ -234,7 +234,7 @@ li:hover > ul.drop-menu a li{
     transform: rotateY(0deg) translateY(0px);
   }
 }
-@keyframes drop-menu {
+@keyframes type1 {
   /* start of animation properties */
   0% {
     opacity: 0;
@@ -248,9 +248,9 @@ li:hover > ul.drop-menu a li{
 }
 /* Increases the animation duration as the dropdown list goes down*/
 /* DOne using nth-child(i)*/
-li:hover > ul.drop-menu a:nth-child(1) li{
-  -webkit-animation-name: drop-menu;
-  animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(1) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -258,9 +258,9 @@ li:hover > ul.drop-menu a:nth-child(1) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-li:hover > ul.drop-menu a:nth-child(2) li{
-  -webkit-animation-name: drop-menu;
-  animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(2) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
   -webkit-animation-duration: 600ms;
   animation-duration: 600ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -268,9 +268,9 @@ li:hover > ul.drop-menu a:nth-child(2) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-li:hover > ul.drop-menu a:nth-child(3) li{
-  -webkit-animation-name: drop-menu;
-  animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(3) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
   -webkit-animation-duration: 900ms;
   animation-duration: 900ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -278,9 +278,9 @@ li:hover > ul.drop-menu a:nth-child(3) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-li:hover > ul.drop-menu a:nth-child(4) li{
-  -webkit-animation-name: drop-menu;
-  animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(4) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
   -webkit-animation-duration: 1200ms;
   animation-duration: 1200ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -288,9 +288,9 @@ li:hover > ul.drop-menu a:nth-child(4) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-li:hover > ul.drop-menu a:nth-child(5) li{
-  -webkit-animation-name: drop-menu;
-  animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(5) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
   -webkit-animation-duration: 1500ms;
   animation-duration: 1500ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -298,9 +298,9 @@ li:hover > ul.drop-menu a:nth-child(5) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-li:hover > ul.drop-menu a:nth-child(6) li{
-  -webkit-animation-name: drop-menu;
-  animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(6) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
   -webkit-animation-duration: 1800ms;
   animation-duration: 1800ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -308,9 +308,247 @@ li:hover > ul.drop-menu a:nth-child(6) li{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-li:hover > ul.drop-menu a:nth-child(7) li{
-  -webkit-animation-name: drop-menu;
+li:hover > ul.drop-menu#type1 a:nth-child(7) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 2100ms;
+  animation-duration: 2100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* End of animation */
+
+/* Dropdown Animation for fade in */
+li:hover > ul.drop-menu#type2 {
+  -webkit-perspective:1000px;
+  perspective:1000px;
+}
+li:hover > ul.drop-menu#type2 a li{
+  opacity: 0;
+  transform-origin: top center; 
+/*  -webkit-animation-name: drop-menu;
   animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+}
+
+/* keyframes used to change opacity, rotation & translation during the animation */
+@-webkit-keyframes type2 {
+  /* start of animation properties*/
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(40deg);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg));
+  }
+}
+@keyframes type2 {
+  /* start of animation properties */
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  60% {
+    transform: rotateX(50deg);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
+li:hover > ul.drop-menu#type2 a:nth-child(1) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(2) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(3) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(4) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(5) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(6) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(7) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 2100ms;
+  animation-duration: 2100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* End of animation */
+
+/* Dropdown Animation for fade in */
+li:hover > ul.drop-menu#type3 {
+  -webkit-perspective:1000px;
+  perspective:1000px;
+}
+li:hover > ul.drop-menu#type3 a li{
+  opacity: 0;
+  transform-origin: top right; 
+/*  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+}
+
+/* keyframes used to change opacity, rotation & translation during the animation */
+@-webkit-keyframes type3 {
+  /* start of animation properties*/
+  0% {
+    opacity: 0;
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg));
+  }
+}
+@keyframes type3 {
+  /* start of animation properties */
+  0% {
+    opacity: 0;
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
+li:hover > ul.drop-menu#type3 a:nth-child(1) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(2) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(3) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(4) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(5) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(6) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(7) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
   -webkit-animation-duration: 2100ms;
   animation-duration: 2100ms;
   -webkit-animation-timing-function: ease-in-out;
