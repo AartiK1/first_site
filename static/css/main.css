@@ -32,6 +32,7 @@ body {
 .jumbotron {
 	background-color: #81D8D0;
   margin-bottom: 0px;
+  height: 200px;
   
 }
 #header-title {
@@ -40,6 +41,7 @@ body {
 	font-weight: 900;
 	font-size: 82px;
 	color: black;
+  margin-top: -20px;
 
 }
 #header-subheading {
