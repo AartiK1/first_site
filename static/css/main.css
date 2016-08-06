@@ -1,11 +1,26 @@
+
+
 #mapdiv_cusine {
   background: white;
   width: 100%;
   margin: 0 auto;
 }
+/* CAROUSEL ON HOME PAGE */
 .fotorama>img{
   height: 70px;
 }
+/* Fotorama Links */
+.fotorama__html div,
+.fotorama__html a {
+  display: block;
+  height: 100%;
+  /* Transparent links are not clickable in IE,
+     but non-existent background fixes this.
+    (Put an empty 1×1 image here to avoid
+     errors in console.) */
+  background: url(_.gif);
+}
+/* END OF CAROUSEL */
 
 /* MAIN BODY */
 
