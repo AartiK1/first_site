@@ -8,34 +8,36 @@
   <!-- Allows different languages within content -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/forms.css') }}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/forms.css') }}">
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-	<!-- Awesome Fonts -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+  <!-- Awesome Fonts -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
 
-	<script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
 
-	<!-- Font Packages -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
+  <!-- Font Packages -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,900italic,900,700italic,700,500italic,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
 
-	<!-- WIthout Python/Flask -->
+  <!-- WIthout Python/Flask -->
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href='../static/css/bootstrap.min.css'>
   <link rel="stylesheet" type="text/css" href='../static/css/main.css'>
   <link rel="stylesheet" type="text/css" href='../static/css/forms.css'>
- <script type="text/javascript" src='../static/js/maps.js'></script>
+  <link rel="stylesheet" type="text/css" href='../static/css/recipe.css'>
+  <script type="text/javascript" src='../static/js/maps.js'></script>
+
   
 
   <!-- jQuery library -->
@@ -44,7 +46,7 @@
   <!-- Latest compiled JavaScript -->
   <script type="text/javascript" src='../static/js/bootstrap.min.js'></script>
   <script src="../static/ammap_3/ammap/ammap.js"></script>
-<script src="../static/ammap_3/ammap/maps/js/continentsLow.js"></script>
+  <script src="../static/ammap_3/ammap/maps/js/continentsLow.js"></script>
   <script type="text/javascript" src='../static/js/main.js'></script>
 
   <link rel="stylesheet" href="../static/ammap_3/ammap/ammap.css" type="text/css" media="all" />
@@ -62,9 +64,9 @@
   <link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 
-	<title>Recipes by Cuisine - </title>
-	<!-- FAVICON -->
-	<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
+  <title>Recipes by Cuisine - </title>
+  <!-- FAVICON -->
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
   <link rel="icon" href='favicon.ico' sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon"> 
 
 </head>
@@ -72,13 +74,13 @@
 <body>
 
 
-<!-- TITLE -->
-	<div class="jumbotron">
-		<h1 id="header-title">Title</h1>
-		<h3 id="header-subheading">Cusine</h3>
-	</div>
+  <!-- TITLE -->
+  <div class="jumbotron">
+    <h1 id="header-title">Title</h1>
+    <h3 id="header-subheading">Cusine</h3>
+  </div>
 
-<!-- NAVBAR --> 
+  <!-- NAVBAR --> 
   <nav>
     <ul class="nav">
       <li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
@@ -123,108 +125,259 @@
     </ul>
   </nav>
   <!-- END OF NAVBAR -->
- <div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active" href="cusine.html">cusine</span></div>
-<div id="other_recipes">
-  <p class="alignleft"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous Recipe</a></p>
+  <div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active" href="cusine.html">cusine</span></div>
+  <div id="other_recipes">
+    <p class="alignleft"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous Recipe</a></p>
     <p class="alignright"><a href="#">Next Recipe<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
-<!-- CONTENT -->
-<div class="container">
+    <!-- CONTENT -->
+    <div class="container">
 
-  <!-- LEFT NAV BAR - NEWSLETTER FORM -->
-    <div id="left-nav-position" class="row">
-    <div class='col-sm-1 col-md-1 news' id="nav-fixed">
-      <nav id='left_nav'>
-        <div class="newsletter-form" id="newsletter-form-nav">
-          <h3 id="news-title">Newsletter</h3>
-          <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
-            <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
-            <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
-            <input class="sub-btn" type="submit" value="Subscribe">
-          </form>
+      <!-- LEFT NAV BAR - NEWSLETTER FORM -->
+      <div id="left-nav-position" class="row">
+        <div class='col-sm-1 col-md-1 news' id="nav-fixed">
+          <nav id='left_nav'>
+            <div class="newsletter-form" id="newsletter-form-nav">
+              <h3 id="news-title">Newsletter</h3>
+              <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+                <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
+                <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
+                <input class="sub-btn" type="submit" value="Subscribe">
+              </form>
+            </div>
+            <p id="get-social-nav">Lets get social!</p>
+            <div id="social-icon-nav">
+              <p><a href="https://www.snapchat.com/add/aarti.khatri"><i title="Snapchat" class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a></p>
+              <p><a href="https://www.instagram.com/AartiK1"><i title="Instagram" class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a></p>
+              <p><a href="https://uk.pinterest.com/aarti0161/"><i title="Pinterest" class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a></p>
+            </div>
+          </nav>
         </div>
-        <p id="get-social-nav">Lets get social!</p>
-        <div id="social-icon-nav">
-        <p><a href="https://www.snapchat.com/add/aarti.khatri"><i title="Snapchat" class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a></p>
-        <p><a href="https://www.instagram.com/AartiK1"><i title="Instagram" class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a></p>
-        <p><a href="https://uk.pinterest.com/aarti0161/"><i title="Pinterest" class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a></p>
-        </div>
-      </nav>
+      </div>
+
+      <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
+
+      <!-- MAIN CONTENT -->
+      <div id="main_content">
+       <div class="col-sm-11">
+        <div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active">cusine</span></div>
+        <div id="other_recipes">
+          <p class="alignleft"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous Recipe</a></p>
+          <p class="alignright"><a href="#">Next Recipe<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
+          <div id="mapdiv_cusine" style="width: 600px; height: 400px;"></div>
+
+          <h2 class="intro">Korean</h2>
+          <div class="intro_content">
+            <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+         </div>
+       </div>
+
+       <div class="row" id="recipe_content">
+
+      <!-- <div class="col-sm-2">
+        
+    </div> -->
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
     </div>
+
+    <div class="col-sm-3">
+
+      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
     </div>
 
-    <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+    </div>
+  </div>
+  <div class="col-sm-11" id="main_content">
+    <h2 class="intro">Japanese</h2>
+    <div class="intro_content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
 
-<!-- MAIN CONTENT -->
-<div id="main_content">
-	<div class="col-sm-11">
-<div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active">cusine</span></div>
-<div id="other_recipes">
-  <p class="alignleft"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous Recipe</a></p>
-    <p class="alignright"><a href="#">Next Recipe<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
-   <div id="mapdiv_cusine" style="width: 600px; height: 400px;"></div>
+  <div class="row" id="recipe_content">
 
-	<h2 class="intro">Gvianeonvqo</h2>
-	<div class="intro_content">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-	</div>
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
 
+    </div>
 
+    <div class="col-sm-3">
 
-	</div>
+      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+    </div>
 
-<!-- END OF MAIN CONTENT -->	
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+  </div>
+
+  <div class="col-sm-11" id="main_content">
+    <h2 class="intro">Indian</h2>
+    <div class="intro_content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+
+  <div class="row" id="recipe_content">
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+
+      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+    </div>
+  </div>
+
+  <div class="col-sm-11" id="main_content">
+    <h2 class="intro">Chinese</h2>
+    <div class="intro_content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+
+  <div class="row" id="recipe_content">
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+
+      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+    </div>
+  </div>
+
+    <div class="col-sm-11" id="main_content">
+    <h2 class="intro">Lebanese</h2>
+    <div class="intro_content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+
+  <div class="row" id="recipe_content">
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+
+      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+    </div>
+  </div>
+
+    <div class="col-sm-11" id="main_content">
+    <h2 class="intro">European</h2>
+    <div class="intro_content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+
+  <div class="row" id="recipe_content">
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+
+      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+
+    </div>
+
+    <div class="col-sm-3">
+      <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+    </div>
+  </div>
+
+  <!-- END OF MAIN CONTENT -->	
 </div>
 
 <!-- END OF CONTAINER DIV -->
 </div>	
 
 <!-- SMALL SCREEN NEWSLETTER FORM -->
-  <div class="newsletter-form row" id="news-ft">
+<div class="newsletter-form row" id="news-ft">
   <div class="col-sm-12 col-xs-12">
     <h2 class="intro" id="news-title-footer"><a name="newsletter"></a>Newsletter</h2>
     <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
-          <textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea>
-          <textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea>
-        <input class="sub-btn" type="submit" value="Subscribe">
-      </form>
+      <textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea>
+      <textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea>
+      <input class="sub-btn" type="submit" value="Subscribe">
+    </form>
   </div>
-  </div>
-  <!-- END OF NEWSLETTER FORM -->
+</div>
+<!-- END OF NEWSLETTER FORM -->
 
 <!-- FOOTER -->
 <footer class="footer" id="whole-ft">
 	<div class="container">
 		<!-- Search Bar -->
-    	<div class="input-group">
-      		<input type="text" class="form-control" placeholder= "&#xf002; Search for..." />
-      		<span class="input-group-btn">
-        		<button class="btn btn-default" type="button">Go!</button>
-      		</span>
-      	</div>
-      	
-		<p class="social-icon" id="get-social">
-    		Lets get social!
-    	</p>
-    	<p class="social-icon">
-    		<a href="https://www.snapchat.com/add/aarti.khatri"><i class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a>
-    		<a href="https://www.instagram.com/AartiK1"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a>
-    		<a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i> </a>
-    		<a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i> </a>
-    		<a href="http://www.youtube.com"><i class="fa fa-3x fa-youtube-play" aria-hidden="true"></i> </a>
-    		<a href="https://uk.pinterest.com/aarti0161/"><i class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a>
-    		<a href="http://www.github.com/AartiK1"><i class="fa fa-3x fa-github" aria-hidden="true"></i> </a>
-    		<a href="mailto:support.veganpanda@pandamail.com?Subject=Email%20Title"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i> </a>
-    	</p>
-		<p class="alignleft"> <!-- Make text muted? -->
-			<a href="terms.html">Terms</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a> | <a href="about.html#contact-us">Contact</a>
-		</p>
-		<p class="alignright">
-			Made in London &copy <a href="#">2016 by Aarti Khatri</a>
-		</p>
-	</div>
-	
+   <div class="input-group">
+    <input type="text" class="form-control" placeholder= "&#xf002; Search for..." />
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">Go!</button>
+    </span>
+  </div>
+
+  <p class="social-icon" id="get-social">
+    Lets get social!
+  </p>
+  <p class="social-icon">
+    <a href="https://www.snapchat.com/add/aarti.khatri"><i class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/AartiK1"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a>
+    <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i> </a>
+    <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i> </a>
+    <a href="http://www.youtube.com"><i class="fa fa-3x fa-youtube-play" aria-hidden="true"></i> </a>
+    <a href="https://uk.pinterest.com/aarti0161/"><i class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a>
+    <a href="http://www.github.com/AartiK1"><i class="fa fa-3x fa-github" aria-hidden="true"></i> </a>
+    <a href="mailto:support.veganpanda@pandamail.com?Subject=Email%20Title"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i> </a>
+  </p>
+  <p class="alignleft"> <!-- Make text muted? -->
+   <a href="terms.html">Terms</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a> | <a href="about.html#contact-us">Contact</a>
+ </p>
+ <p class="alignright">
+   Made in London &copy <a href="#">2016 by Aarti Khatri</a>
+ </p>
+</div>
+
 </footer>
 
 <!-- BACK TO TOP BUTTON -->
