@@ -86,6 +86,14 @@ body {
 	font-size: 45px;
 	font-weight: bold;
 }
+.intro a{
+  text-decoration: none;
+  color:  #81D8D0;
+}
+.intro a:hover{
+  text-decoration: none;
+  color:  #008080;
+}
 @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 .intro_content {
   text-decoration: none;
