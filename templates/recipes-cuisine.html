@@ -35,6 +35,8 @@
   <link rel="stylesheet" href='../static/css/bootstrap.min.css'>
   <link rel="stylesheet" type="text/css" href='../static/css/main.css'>
   <link rel="stylesheet" type="text/css" href='../static/css/forms.css'>
+ <script type="text/javascript" src='../static/js/maps.js'></script>
+  
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -42,9 +44,9 @@
   <!-- Latest compiled JavaScript -->
   <script type="text/javascript" src='../static/js/bootstrap.min.js'></script>
   <script src="../static/ammap_3/ammap/ammap.js"></script>
-<script src="../static/ammap_3/ammap/maps/js/worldLow.js"></script>
+<script src="../static/ammap_3/ammap/maps/js/continentsLow.js"></script>
   <script type="text/javascript" src='../static/js/main.js'></script>
-  
+
   <link rel="stylesheet" href="../static/ammap_3/ammap/ammap.css" type="text/css" media="all" />
 
   
@@ -110,14 +112,44 @@
     </ul>
   </nav>
   <!-- END OF NAVBAR -->
- 
+ <div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active" href="cusine.html">cusine</span></div>
+<div id="other_recipes">
+  <p class="alignleft"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous Recipe</a></p>
+    <p class="alignright"><a href="#">Next Recipe<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
 <!-- CONTENT -->
 <div class="container">
+
+  <!-- LEFT NAV BAR - NEWSLETTER FORM -->
+    <div id="left-nav-position" class="row">
+    <div class='col-sm-1 col-md-1 news' id="nav-fixed">
+      <nav id='left_nav'>
+        <div class="newsletter-form" id="newsletter-form-nav">
+          <h3 id="news-title">Newsletter</h3>
+          <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+            <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
+            <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
+            <input class="sub-btn" type="submit" value="Subscribe">
+          </form>
+        </div>
+        <p id="get-social-nav">Lets get social!</p>
+        <div id="social-icon-nav">
+        <p><a href="https://www.snapchat.com/add/aarti.khatri"><i title="Snapchat" class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a></p>
+        <p><a href="https://www.instagram.com/AartiK1"><i title="Instagram" class="fa fa-3x fa-instagram" aria-hidden="true"></i> </a></p>
+        <p><a href="https://uk.pinterest.com/aarti0161/"><i title="Pinterest" class="fa fa-3x fa-pinterest" aria-hidden="true"></i> </a></p>
+        </div>
+      </nav>
+    </div>
+    </div>
+
+    <!-- END OF LEFT NAV BAR - NEWSLETTER FORM -->
 
 <!-- MAIN CONTENT -->
 <div id="main_content">
 	<div class="col-sm-11">
-
+<div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active" href="cusine.html">cusine</span></div>
+<div id="other_recipes">
+  <p class="alignleft"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous Recipe</a></p>
+    <p class="alignright"><a href="#">Next Recipe<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
    <div id="mapdiv_cusine" style="width: 600px; height: 400px;"></div>
 
 	<h2 class="intro">Gvianeonvqo</h2>
