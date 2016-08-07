@@ -1,3 +1,8 @@
+.korean-lang {
+  font-size: 30px;
+  font-family: 'nanum pen script';
+  font-weight: normal;
+}
 #recipe_content.row {
   margin-left: 5%;
   margin-right: 0%;
@@ -14,7 +19,7 @@
 .recipe-name {
   font-weight: bold;
   padding-top: 5px;
-  font-family: 'Amatic SC';
+  font-family: 'nanum pen script', 'Amatic SC', 'roboto';
   font-size: 26px;
   text-align: center;
   background-color: #81D8D0;
