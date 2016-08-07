@@ -24,6 +24,27 @@ doc.scroll(function () {
 });
 /* End of LHS nav scroll */
 
+/* RHS nav scrolls only to top of footer. Doesn't overlap */
+var doc = $(document); 
+doc.scroll(function () {
+     // make sure to wrap yours entire footer in some css selector
+    var footer = $('#whole-ft');
+    var p = $('#nav-fixed-right');
+    var s = $('#right-nav-position');
+
+    var top = doc.scrollTop() + s.offset().top  * 2.5 + p.height();
+    var footerTop = footer.offset().top;
+
+    var offset = footerTop - top;
+
+    if (offset < 0) {
+        p.css({'margin-top': '' + offset + 'px'});
+    } else {
+        p.css({'margin-top': 0});
+    }
+});
+/* End of RHS nav scroll */
+
 
 //TEXT CHARACTER COUNT
 var text_max = 500;

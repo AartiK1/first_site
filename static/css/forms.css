@@ -221,6 +221,56 @@ opacity: 0.5;
   border: 1px solid #008080;
 }
   /* END OF NEWSLETTER FORM */
+/* List of meals within recipe page */
+
+/* RHS NAVBAR */
+#right_nav {
+  position:fixed;
+  right:-135px;
+  font-family: 'Amatic SC', 'roboto';
+  color: #008080;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+#right_nav div {
+  display: block;
+}
+
+  /* SOCIAL BUTTONS NAVBAR */
+#right_nav p>a {
+  text-decoration: none;
+  color: #81D8D0;
+  margin: 0 auto;
+  position: relative;
+}
+#meal ul {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 7px;
+  text-align: center;
+  padding-left: 0px;
+  background-color:  white;
+  width: 35%;
+  border-radius: 20%;
+  margin-left: 120px;
+}
+
+#meal a {
+  text-decoration: none;
+  color:  #81D8D0;
+  font-family: 'Amatic SC'  'roboto';
+  font-size: 26px;
+  font-weight: bold;
+}
+#meal a:hover , #meal a:active {
+  color: black;
+}
+#meal {
+  margin-top: -5px;
+  padding-top: 0;
+}
+
 
 /* END OF LHS NAVBAR */
 
@@ -264,6 +314,9 @@ opacity: 0.5;
   /* Hide left nav newletter form on small screens */
   #newsletter-form-nav{
     display: none !important;
+  }
+  #right_nav{
+    display: none;
   }
 }
 
