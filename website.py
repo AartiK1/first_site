@@ -81,7 +81,7 @@ def add_list_member(to, full_name):
               'name': full_name,
               'description': 'Newsletter Subscriber'})
              
-            
+""" MAIN PAGES """            
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -93,11 +93,28 @@ def home2():
 @app.route("/about.html")
 def about():
     return render_template("about.html")
+
+@app.route("/blog.html")
+def blog():
+    return render_template("blog.html")
+    
+@app.route("/terms.html")
+def terms():
+    return render_template("terms.html")
+
+@app.route("/privacy-policy.html")
+def privacy():
+    return render_template("privacy-policy.html")
+    
+@app.route("/sitemap.html")
+def sitemap():
+    return render_template("sitemap.html")
     
 @app.route("/thank-you.html")
 def thank_you():
     return render_template("thank-you.html")
     
+
 """ RECIPE PAGES """    
 @app.route("/recipes.html")
 def recipes():
@@ -131,37 +148,70 @@ def recipes_dessert():
 def recipes_snacks():
     return render_template("recipes/snacks.html")
 
+
 """ CUISINE PAGES """
 
 @app.route("/recipes/cuisine/korean.html")
 def recipes_korean():
     return render_template("recipes/cuisine/korean.html")
 
+@app.route("/recipes/cuisine/japanese.html")
+def recipes_japanese():
+    return render_template("recipes/cuisine/japanese.html")
 
+@app.route("/recipes/cuisine/indian.html")
+def recipes_indian():
+    return render_template("recipes/cuisine/indian.html")
+
+@app.route("/recipes/cuisine/chinese.html")
+def recipes_chinese():
+    return render_template("recipes/cuisine/chinese.html")
     
-    
-    
-    
+@app.route("/recipes/cuisine/lebanese.html")
+def recipes_lebanese():
+    return render_template("recipes/cuisine/lebanese.html")
+
+@app.route("/recipes/cuisine/south-american.html")
+def recipes_south_american():
+    return render_template("recipes/cuisine/south-american.html")
+
+@app.route("/recipes/cuisine/north-american.html")
+def recipes_north_american():
+    return render_template("recipes/cuisine/north-american.html")
+
+@app.route("/recipes/cuisine/european.html")
+def recipes_european():
+    return render_template("recipes/cuisine/european.html")
+
+""" INGREDIENTS PAGES """
 
 @app.route("/ingredients.html")
 def ingredients():
     return render_template("ingredients.html")
-    
-@app.route("/blog.html")
-def blog():
-    return render_template("blog.html")
-    
-@app.route("/terms.html")
-def terms():
-    return render_template("terms.html")
 
-@app.route("/privacy-policy.html")
-def privacy():
-    return render_template("privacy-policy.html")
+@app.route("/ingredients/indian.html")
+def ingredients_indian():
+    return render_template("ingredients/indian.html")
+
+@app.route("/ingredients/korean.html")
+def ingredients_korean():
+    return render_template("ingredients/korean.html")
     
-@app.route("/sitemap.html")
-def sitemap():
-    return render_template("sitemap.html")
+@app.route("/ingredients/japanese.html")
+def ingredients_japanese():
+    return render_template("ingredients/japanese.html")
+
+@app.route("/ingredients/chinese.html")
+def ingredients_chinese():
+    return render_template("ingredients/chinese.html")
+
+@app.route("/ingredients/south-american.html")
+def ingredients_south_american():
+    return render_template("ingredients/south-american.html")
+
+@app.route("/ingredients/baking.html")
+def ingredients_baking():
+    return render_template("ingredients/baking.html")
 
 
     

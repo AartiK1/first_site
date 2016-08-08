@@ -779,7 +779,7 @@ color: rgba(0, 128, 128, 0.7) !important;
 }
 .cd-top:hover {
   opacity: 1;
-  background: rgba(0, 128, 128, 0.7) url(cd-top-arrow-b.png) no-repeat center 50%;
+  background: rgba(0, 128, 128, 0.7) url(cd-top-arrow-b.svg) no-repeat center 50%;
 }
 
 @-webkit-keyframes cd-top {

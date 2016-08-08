@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/forms.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/recipe.css') }}">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -77,46 +78,46 @@
 		<h3 id="header-subheading">Dessert</h3>
 	</div>
 
-<!-- NAVBAR --> 
+  <!-- NAVBAR --> 
   <nav>
     <ul class="nav">
-      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="index.html">Home</a>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="../index.html">Home</a>
       </li>
-      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="about.html">About</a>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="../about.html">About</a>
         <ul class="drop-menu">
-          <a href="about.html#contact-us"><li class='hvr-shutter-out-horizontal drop' role="presentation">Contact</li></a>
+          <a href="../about.html#contact-us"><li class='hvr-shutter-out-horizontal drop' role="presentation">Contact</li></a>
         </ul>
       </li>
-      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="blog.html">Blog</a>
+      <li class='hvr-shutter-out-horizontal' role="presentation"><a href="../blog.html">Blog</a>
         <ul class="drop-menu" id="type3">
-          <a href="recipes-cuisine.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">By Cusine</li></a>
-          <a href="recipes-staples.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Pantry Staples</li></a>
-          <a href="recipes-breakfast.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Breakfast</li></a>
-          <a href="recipes-starter.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Starter</li></a>
-          <a href="recipes-entree.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Entree</li></a>
-          <a href="recipes-dessert.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Dessert</li></a>
-          <a href="recipes-snacks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Snacks</li></a>
+          <a href="cuisine.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">By Cusine</li></a>
+          <a href="staples.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Pantry Staples</li></a>
+          <a href="breakfast.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Breakfast</li></a>
+          <a href="starter.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Starter</li></a>
+          <a href="entree.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Entree</li></a>
+          <a href="dessert.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Dessert</li></a>
+          <a href="snacks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Snacks</li></a>
         </ul>
       </li>
-      <li id="active" class='hvr-shutter-out-horizontal' id="type1"  role="presentation"><a href="recipes.html">Recipes</a>
+      <li id="active" class='hvr-shutter-out-horizontal' id="type1"  role="presentation"><a href="../recipes.html">Recipes</a>
         <ul class="drop-menu" id="type1">
-          <a href="recipes-cuisine.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">By Cusine</li></a>
-          <a href="recipes-staples.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Pantry Staples</li></a>
-          <a href="recipes-breakfast.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Breakfast</li></a>
-          <a href="recipes-starter.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Starter</li></a>
-          <a href="recipes-entree.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Entree</li></a>
-          <a href="recipes-dessert.html"><li id="active-dd" class='hvr-shutter-out-horizontal drop' role="presentation">Dessert</li></a>
-          <a href="recipes-snacks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Snacks</li></a>
+          <a href="cuisine.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">By Cusine</li></a>
+          <a href="staples.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Pantry Staples</li></a>
+          <a href="breakfast.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Breakfast</li></a>
+          <a href="starter.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Starter</li></a>
+          <a href="entree.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Entree</li></a>
+          <a href="dessert.html"><li id="active-dd" class='hvr-shutter-out-horizontal drop' role="presentation">Dessert</li></a>
+          <a href="snacks.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Snacks</li></a>
         </ul>
       </li>
-      <li class='hvr-shutter-out-horizontal' id="type2" role="presentation"><a href="ingredients.html">Ingredients</a>
+      <li class='hvr-shutter-out-horizontal' id="type2" role="presentation"><a href="../ingredients.html">Ingredients</a>
         <ul class="drop-menu" id="type2">
-          <a href="ingredients-indian.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Indian</li></a>
-          <a href="ingredients-korean.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Korean</li></a>
-          <a href="ingredients-japanese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Japanese</li></a>
-          <a href="ingredients-chinese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Chinese</li></a>
-          <a href="ingredients-southa.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">South American</li></a>
-          <a href="ingredients-baking.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Baking</li></a>
+          <a href="../ingredients/indian.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Indian</li></a>
+          <a href="../ingredients/korean.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Korean</li></a>
+          <a href="../ingredients/japanese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Japanese</li></a>
+          <a href="../ingredients/chinese.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Chinese</li></a>
+          <a href="../ingredients/southa.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">South American</li></a>
+          <a href="../ingredients/baking.html"><li class='hvr-shutter-out-horizontal drop' role="presentation">Baking</li></a>
         </ul>
       </li>
     </ul>
@@ -132,7 +133,7 @@
       <nav id='left_nav'>
         <div class="newsletter-form" id="newsletter-form-nav">
           <h3 id="news-title">Newsletter</h3>
-          <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+          <form name="htmlform_newsletter" method="post" action="../newsletter-sub.html" autocomplete="on">
             <p><textarea rows='1' class="name" type="text" name="name" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea></p>
             <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea></p>
             <input class="sub-btn" type="submit" value="Subscribe">
@@ -151,10 +152,10 @@
 <!-- MAIN CONTENT -->
 <div id="main_content">
 	<div class="col-sm-11">
-<div id="directory"><a href="index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active">dessert</span></div>
+<div id="directory"><a href="../index.html">home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  <a href="../recipes.html">recipes</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span id="dir-active">dessert</span></div>
 <div id="other_recipes">
-          <p class="alignleft"><a href="recipes-entree.html"><i class="fa fa-angle-left" aria-hidden="true"></i>Entree</a></p>
-          <p class="alignright"><a href="recipes-snacks.html">Snacks<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
+          <p class="alignleft"><a href="entree.html"><i class="fa fa-angle-left" aria-hidden="true"></i>Entree</a></p>
+          <p class="alignright"><a href="snacks.html">Snacks<i class="fa fa-angle-right" aria-hidden="true"></i></a></p></div>
 
 	<h2 class="intro">Gvianeonvqo</h2>
 	<div class="intro_content">
@@ -175,17 +176,17 @@
       </div> -->
 
       <div class="col-sm-5">
-        <div class='home'><a href='recipes-creme-brulee.html'><img src='../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+        <div class='home'><a href='dessert/creme-brulee.html'><img src='../../static/images/food/creme_brulee.jpg'><span id="overlay_text"><p class="recipe-name">Creme Brulee</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
 
-        <div class='home'><a href='recipes-pannacotta.html'><img src='../static/images/food/pannacota.jpg'><span id="overlay_text"><p class="recipe-name">Pannacotta</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+        <div class='home'><a href='dessert/pannacotta.html'><img src='../../static/images/food/pannacota.jpg'><span id="overlay_text"><p class="recipe-name">Pannacotta</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
 
       </div>
 
       <div class="col-sm-5">
 
-      <div class='home'><a href='recipes-totoro-tart.html'><img src='../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+      <div class='home'><a href='dessert/totoro-tart.html'><img src='../../static/images/food/totoro_tart.jpg'><span id="overlay_text"><p class="recipe-name">Totoro Tart</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
 
-        <div class='home'><a href='recipes-orange-meringue-pie.html'><img src='../static/images/food/orange_meringue.jpg'><span id="overlay_text"><p class="recipe-name">Orange Meringue Pie</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
+        <div class='home'><a href='dessert/orange-meringue-pie.html'><img src='../../static/images/food/orange_meringue.jpg'><span id="overlay_text"><p class="recipe-name">Orange Meringue Pie</p><p>Difficulty: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p><p>Time: </p><p><em>Description</em></p></span></span></a></div>
       </div>
 
 <!--       <div class="col-sm-3">
@@ -204,7 +205,7 @@
   <div class="newsletter-form row" id="news-ft">
   <div class="col-sm-12 col-xs-12">
     <h2 class="intro" id="news-title-footer"><a name="newsletter"></a>Newsletter</h2>
-    <form name="htmlform_newsletter" method="post" action="newsletter-sub.html" autocomplete="on">
+    <form name="htmlform_newsletter" method="post" action="../newsletter-sub.html" autocomplete="on">
           <textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007; Full Name" minlength="2" maxlength="80" size="12" onkeypress="return isAlphaKey(event)" required></textarea>
           <textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; Email" maxlength="80" required></textarea>
         <input class="sub-btn" type="submit" value="Subscribe">
@@ -238,7 +239,7 @@
     		<a href="mailto:support.veganpanda@pandamail.com?Subject=Email%20Title"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i> </a>
     	</p>
 		<p class="alignleft"> <!-- Make text muted? -->
-			<a href="terms.html">Terms</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a> | <a href="about.html#contact-us">Contact</a>
+			<a href="../terms.html">Terms</a> | <a href="../privacy-policy.html">Privacy Policy</a> | <a href="../sitemap.html">Sitemap</a> | <a href="../about.html#contact-us">Contact</a>
 		</p>
 		<p class="alignright">
 			Made in London &copy <a href="#">2016 by Aarti Khatri</a>
