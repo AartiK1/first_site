@@ -1,4 +1,178 @@
 
+/* PACMAN ANIMATION */
+.track1 {
+  width: 35%;
+  height: 0px;
+  border-top: 2px dotted #eee;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+}
+.track2 {
+  width: 35%;
+  height: 0px;
+  border-top: 2px dotted #eee;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+  right: -30%;
+}
+
+.kurt1 {
+  -webkit-animation: moveChomp1 10s linear infinite;
+          animation: moveChomp1 10s linear infinite;
+  background: black;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: 10px;
+}
+
+.kurt2 {
+  -webkit-animation: moveChomp2 10s linear infinite;
+          animation: moveChomp2 10s linear infinite;
+  background: black;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: 10px;
+}
+
+.loader {
+  background: none;
+  display: inline-block;
+  position: relative;
+}
+.loader:before, .loader:after {
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  border: 15px solid white;
+  border-radius: 50%;
+  border-color: white;
+  border-right-color: transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -43px;
+  -webkit-animation: topchomp 1s ease-in-out infinite;
+          animation: topchomp 1s ease-in-out infinite;
+}
+.loader:after {
+  border-right-color: transparent;
+  -webkit-animation: bottomchomp 1s ease-in-out infinite;
+          animation: bottomchomp 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes bottomchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes bottomchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+}
+@-webkit-keyframes topchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+}
+@keyframes topchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+}
+@-webkit-keyframes moveChomp1 {
+  0%, 100% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% + 15px);
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+@keyframes moveChomp1 {
+  0%, 100% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% + 15px);
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes moveChomp2 {
+  0%, 100% {
+    left: calc(100% + 15px);
+  }
+  50% {
+    left: 0% ;
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes moveChomp2 {
+  0%, 100% {
+    left: calc(100% + 15px);
+  }
+  50% {
+    left: 0%;
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+/* END OF PACMAN */
+
 
 #mapdiv_cusine {
   background: white;
@@ -32,7 +206,7 @@ body {
 .jumbotron {
 	background-color: #81D8D0;
   margin-bottom: 0px;
-  height: 200px;
+  height: 230px;
   
 }
 #header-title {
@@ -42,6 +216,7 @@ body {
 	font-size: 82px;
 	color: black;
   margin-top: -20px;
+/*  margin-bottom: 30px;*/
 
 }
 #header-subheading {
@@ -50,6 +225,7 @@ body {
 	font-weight: 300;
 	font-size: 45px;
   color: white;
+/*  margin-top: 40px;*/
 }
 
 
