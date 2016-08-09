@@ -1105,6 +1105,9 @@ color: rgba(0, 128, 128, 0.7) !important;
     height: 100px;
     margin-top: 3%;
   }
+  .container{
+    margin-left: 20%;
+  }
 
 }
 
