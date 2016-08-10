@@ -114,9 +114,9 @@ def sitemap():
 def thank_you():
     return render_template("thank-you.html")
     
-@app.route("/search.html")
-def search():
-    return render_template("search.html")
+# @app.route("/search.html")
+# def search():
+#     return render_template("search.html")
 
 
 """ RECIPE PAGES """    
@@ -251,8 +251,20 @@ def sign_up():
     add_list_member(to, full_name)
     return render_template("newsletter-sub.html")
 
-@app.route("/search.html", methods=['GET', 'POST'])
-def function():
-    return render_template("search.html")    
+# @app.route("/search.html", methods=['GET', 'POST'])
+# def function():
+#     return render_template("search.html") 
+
+@app.route("/search_results.html", methods=['POST'])
+def search_results():
+    form_data = request.form
+    query = request.form.get('query')
+    print "Hello"
+    return render_template('search_results.html',
+                            query = query)
+                            # results= results)
+
+
+
 
 app.run()
