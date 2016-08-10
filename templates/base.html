@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <html lang="en">
   <!-- Allows different languages within content -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -146,68 +146,19 @@
     <!-- MAIN CONTENT -->
     <div id="main_content" class="col-sm-11">
 
-     <h2 class="intro">About Me...</h2>
+     <h2 class="intro">Search Results</h2>
      <div class="intro_content">
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-     </p>
-     
-     <p> <span lang="ko" xml:lang="ko">떡볶이</span></p>
 
-     <p>You'd say that in Chinese as <span lang="zh-Hans">中国科学院文献情报中心</span>.</p>
+     {% block content %}
 
-     
+     {% endblock %}
    </div>
 
-   <h2 class="intro"><a name="contact-us"></a>Contact Me...</h2>
-   <div class="intro_content">
-    <p>
-     If you have any questions, suggestions, or just want to say hi, I'd love to hear from you! Fill in the form below and I'll get back to you when I can.
-   </p>
- </div>
 
  <br />
  <!-- CONTACT FORM -->
 
- <div id="contact-form">
-  <form name="htmlform" method="post" action="thank-you.html" autocomplete="on">
-
-   <label for="title">title</label>    
-   <p><select name="title" title="Please select a title." required="">
-     <option disabled selected value> -- select an option -- </option>
-     <option value="miss">Miss</option>
-     <option value="mrs">Mrs</option>
-     <option value="mr">Mr</option>
-     <option value="ms">Ms</option>
-     <option value="sir">Sir</option>
-     <option value="dr">Dr</option>
-     <option value="lady">Lady</option>
-     <option value="lord">Lord</option>
-     <option value="other">Other</option>
-   </select></p>
-   <label for="forname">forename</label>
-   <p><textarea rows='1' class="name" type="text" name="fname" placeholder="&#xf007;" minlength="2" maxlength="50" size="30" onkeypress="return isAlphaKey(event)" required></textarea></p>
-   
-   <label for="surname">surname</label>
-   <p><textarea rows='1' class="name" type="text" name="lname" placeholder="&#xf0c0;" minlength="2" maxlength="50" onkeypress="return isAlphaKey(event)" required></textarea></p>
-   
-   <label for="email">email address</label>
-   <p><textarea rows='1' class="name" type="email" name="email" placeholder="&#xf0e0; name@example.com" maxlength="80" required></textarea></p>
-
-   <label for="tel">telephone number (optional)</label>
-   <p><textarea  rows='1' class="name" type="text" name="tel" placeholder="&#xf095; +44xxxxxxxxxx" minlength="11" maxlength="13" onkeypress="return isNumberKey(event)" ></textarea></p>
-
-   <label for="msg">your message...</label>
-   <p><textarea id="msg" class="name form-control" name="comments" placeholder="&#xf075; Say hello..." maxlength="500" rows="8" required></textarea><h6 id="count_message">500 characters remaining</h6></p>
-
-   <input id="contact-news" type="checkbox" name="sub" value="subcribe"><em>Subscribe to our newsletter to be the first to know about our latest articles and resources.</em></input>
-
-   <div class="wrapper">
-     <input class="sub-btn" type="submit" value="Submit"> 
-   </div>
- </form>
-</div>
-<!-- END OF CONTACT FORM -->
+ 
 
 <!-- SMALL SCREEN NEWSLETTER FORM -->
 <div class="newsletter-form row" id="news-ft">
@@ -224,11 +175,11 @@
 
 </div>
 
-<!-- END OF MAIN CONTENT -->	
+<!-- END OF MAIN CONTENT -->  
 </div>
 
 <!-- END OF CONTAINER DIV -->
-</div>	
+</div>  
 
 
 <!-- SMALL SCREEN NEWSLETTER FORM -->
@@ -246,8 +197,8 @@
 
 <!-- FOOTER -->
 <footer class="footer" id="whole-ft">
-	<div class="container">
-		<!-- Search Bar -->
+  <div class="container">
+    <!-- Search Bar -->
    <div class="input-group">
     <input type="text" class="form-control" placeholder= "&#xf002; Search for..." />
     <span class="input-group-btn">
