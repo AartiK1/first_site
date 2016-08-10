@@ -152,6 +152,14 @@ def recipes_dessert():
 def recipes_snacks():
     return render_template("recipes/snacks.html")
 
+""" BREAKFAST """
+
+@app.route("/recipes/breakfast/vegan-egg.html")
+def recipes_vegan_egg():
+    return render_template("recipes/breakfast/vegan-egg.html")
+
+
+
 
 """ CUISINE PAGES """
 
