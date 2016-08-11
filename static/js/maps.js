@@ -1,6 +1,6 @@
 // FUNCTIONS TO BE RUN AFTER PAGE HAS LOADED
 $(document).ready(function() {  
-AmCharts.makeChart( "mapdiv_cusine", {
+AmCharts.makeChart( "mapdiv_cuisine", {
   /**
    * this tells amCharts it's a map
    */
@@ -65,3 +65,5 @@ AmCharts.makeChart( "mapdiv_cusine", {
   //  */
   // "smallMap": {}
 } );
+
+});
