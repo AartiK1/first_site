@@ -1,0 +1,337 @@
+/* CONTACT FORM */
+  
+  /* Titles */
+#contact-form label{
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Amatic SC', cursive;
+}
+#contact-form form {
+  margin: 0 auto;
+  width: 60%;
+  font-family: 'roboto', FontAwesome;
+  color: #81D8D0;
+}
+#contact-form textarea , #contact-form select{
+  width:100%;
+  padding: 2% 2%;
+  margin-bottom:3%;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  text-align:left;
+  color: #008080;
+  background-color: white;
+  font-family: 'FontAwesome' , 'roboto' , cursive;
+}
+#contact-form textarea:focus , #contact-form textarea:hover , #contact-form select:focus , #contact-form select:hover{
+    border: 3px solid #008080;
+}
+
+/* Placeholder Color */
+#contact-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #008080 !important;
+opacity: 0.5;
+}
+#contact-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #008080 !important; 
+opacity: 0.5; 
+}
+#contact-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #008080 !important;
+opacity: 0.5;  
+}
+#contact-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #008080 !important; 
+opacity: 0.5; 
+}
+
+/* Characters remaining message */
+#count_message {
+  text-align: right;
+  font-family: 'Amatic SC';
+  font-size: 22px;
+  font-weight: bold;
+}
+
+ /*Submit Button*/ 
+#contact-form input[type=button], #contact-form input[type=submit], #contact-form input[type=reset]{
+    background-color: #81D8D0;
+    border-radius: 5px;
+    border: 1px solid #81D8D0;
+    color: black;
+    padding: 1% 2%;
+    text-decoration: none;
+    margin: 3%;
+    cursor: pointer;
+    width:30%;
+    font-size:27px;
+    display: inline-block;
+    font-family: 'Amatic SC' , cursive;
+    font-weight: bold;
+}
+.wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+#contact-form .sub-btn:hover{
+  color: white;
+  background-color: #008080;
+  border: 1px solid #008080;
+}
+#contact-news{
+  text-align: center;
+  margin: 10px auto;
+  width: 5%;
+  /*margin-bottom: px;*/
+}
+/* Attempt to style checkbox */
+/*#contact-news input[type=checkbox] , #contact-news input[type=submit] , #contact-news input[type=reset]{
+  background-color: red;
+}*/
+
+/* END OF CONTACT FORM */
+
+
+
+/* LHS NAVBAR */
+#left_nav {
+  position:fixed;
+  left:-115px;
+  font-family: 'roboto';
+  color: #008080;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: -45px;
+}
+#left_nav div {
+  display: block;
+}
+
+  /* SOCIAL BUTTONS NAVBAR */
+#left_nav p>a {
+  text-decoration: none;
+  color: #81D8D0;
+  margin: 0 auto;
+  position: relative;
+}
+#social-icon-nav{
+  left: -28px;
+  top: -45px;
+  margin: 0 auto;
+  position: relative;
+}
+#get-social-nav {
+  font-family: 'Amatic SC', 'roboto';
+  font-size: 30px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-top: 0px;
+  color: #81D8D0;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+  left: 110px;
+  top: 280px;
+  position: relative;
+}
+/* Translates icon up & changes color when hovered over */
+#social-icon-nav p a .fa{
+  transition: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#social-icon-nav p a .fa:hover , #social-icon-nav p a .fa:focus , #social-icon-nav p a .fa:active{
+  /*font-size: 330%;*/
+  color:#008080;
+  text-decoration: none;
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
+/* End of translation */
+  /* END OF SOCIAL BUTTONS */
+
+  /* NEWSLETTER FORM */
+
+#left_nav form {
+  display: block;
+}
+#news-title{
+  margin-bottom: 10px;
+  color: #81D8D0;
+  position: relative;
+  left: 0px;
+  font-family: 'Amatic SC', 'roboto';
+  font-size: 28px;
+  font-weight: bold;
+}
+#newsletter-form-nav textarea{
+  width:40%;
+  padding: 2% 2%;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  text-align:left;
+  color: #008080;
+  background-color: white;
+  font-family: 'FontAwesome' , 'roboto';
+}
+.newsletter-form textarea:focus , .newsletter-form textarea:hover , #news-ft textarea:focus , #news-ft textarea:hover{
+    border: 3px solid #008080;
+}
+
+/* Placeholder Color */
+.newsletter-form textarea::-webkit-input-placeholder , input::-webkit-input-placeholder {
+color: #008080 !important;
+opacity: 0.5;
+}
+.newsletter-form textarea:-moz-placeholder , input:-moz-placeholder{ /* Firefox 18- */
+color: #008080 !important; 
+opacity: 0.5; 
+}
+.newsletter-form textarea::-moz-placeholder , input::-moz-placeholder {  /* Firefox 19+ */
+color: #008080 !important;
+opacity: 0.5;  
+}
+.newsletter-form textarea:-ms-input-placeholder , input:-ms-input-placeholder {  
+color: #008080 !important; 
+opacity: 0.5; 
+}
+/*Submit Button*/ 
+.newsletter-form input[type=button], .newsletter-form input[type=submit], .newsletter-form input[type=reset] {
+    background-color: #81D8D0;
+    border-radius: 5px;
+    border: 1px solid #81D8D0;
+    color: black;
+    padding: 1% 2%;
+    text-decoration: none;
+    margin: 0% 4% 4% 4%;
+    cursor: pointer;
+    width:30%;
+    font-size:25px;
+    display: inline-block;
+    font-family: 'Amatic SC' , cursive;
+    font-weight: bold;
+}
+.newsletter-form .sub-btn:hover{
+  background-color: #008080;
+  color: white;
+  border: 1px solid #008080;
+}
+  /* END OF NEWSLETTER FORM */
+/* List of meals within recipe page */
+
+/* RHS NAVBAR */
+#right_nav {
+  position:fixed;
+  right:-135px;
+  font-family: 'Amatic SC', 'roboto';
+  color: #008080;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+#right_nav div {
+  display: block;
+}
+
+  /* SOCIAL BUTTONS NAVBAR */
+#right_nav p>a {
+  text-decoration: none;
+  color: #81D8D0;
+  margin: 0 auto;
+  position: relative;
+}
+#meal ul {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 7px;
+  text-align: center;
+  padding-left: 0px;
+  background-color:  white;
+  width: 35%;
+  border-radius: 20%;
+  margin-left: 120px;
+}
+
+#meal a {
+  text-decoration: none;
+  color:  #81D8D0;
+  font-family: 'Amatic SC'  'roboto';
+  font-size: 26px;
+  font-weight: bold;
+}
+#meal a:hover , #meal a:active {
+  color: black;
+}
+#meal {
+  margin-top: -5px;
+  padding-top: 0;
+}
+
+
+/* END OF LHS NAVBAR */
+
+/* FOOTER NEWSLETTER */
+
+/* Centers form on page */
+#news-ft>div{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+#news-ft{
+  margin: 0 auto;
+}
+#news-title-footer{
+  margin-bottom: 10px;
+  color:  #81D8D0;
+}
+#news-hide{
+  display: none;
+}
+#news-ft textarea{
+  width:30%;
+  padding: 2% 2%;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  text-align:left;
+  color: #008080;
+  background-color: white;
+  font-family: 'FontAwesome' , 'roboto';
+}
+#news-ft input[type=button], #news-ft input[type=submit], #news-ft input[type=reset] {
+    margin: 0% 4% 4% 0%;
+    position: relative;
+    bottom: 15px;
+}
+/* END OF FOOTER NEWSLETTER */
+
+
+@media screen and (max-width: 768px) {
+  /* Hide left nav newletter form on small screens */
+  #newsletter-form-nav{
+    display: none !important;
+  }
+  #right_nav{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Hide Footer Newsletter on large screens */
+  #news-ft{
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  #contact-form form {
+    margin: 0px ;
+    width: 100%;
+
+  }

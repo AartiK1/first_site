@@ -1,0 +1,1161 @@
+
+/* PACMAN ANIMATION */
+.track1 {
+  width: 35%;
+  height: 0px;
+  border-top: 2px dotted #eee;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+}
+.track2 {
+  width: 35%;
+  height: 0px;
+  border-top: 2px dotted #eee;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+  right: -30%;
+}
+
+.kurt1 {
+  -webkit-animation: moveChomp1 10s linear infinite;
+          animation: moveChomp1 10s linear infinite;
+  background: black;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: 10px;
+}
+
+.kurt2 {
+  -webkit-animation: moveChomp2 10s linear infinite;
+          animation: moveChomp2 10s linear infinite;
+  background: black;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: 10px;
+}
+
+.loader {
+  background: none;
+  display: inline-block;
+  position: relative;
+}
+.loader:before, .loader:after {
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  border: 15px solid white;
+  border-radius: 50%;
+  border-color: white;
+  border-right-color: transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -43px;
+  -webkit-animation: topchomp 1s ease-in-out infinite;
+          animation: topchomp 1s ease-in-out infinite;
+}
+.loader:after {
+  border-right-color: transparent;
+  -webkit-animation: bottomchomp 1s ease-in-out infinite;
+          animation: bottomchomp 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes bottomchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes bottomchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+}
+@-webkit-keyframes topchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+}
+@keyframes topchomp {
+  0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+}
+@-webkit-keyframes moveChomp1 {
+  0%, 100% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% + 15px);
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+@keyframes moveChomp1 {
+  0%, 100% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% + 15px);
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes moveChomp2 {
+  0%, 100% {
+    left: calc(100% + 15px);
+  }
+  50% {
+    left: 0% ;
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes moveChomp2 {
+  0%, 100% {
+    left: calc(100% + 15px);
+  }
+  50% {
+    left: 0%;
+  }
+  0%, 49% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+/* END OF PACMAN */
+
+
+#mapdiv_cusine {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+}
+/* CAROUSEL ON HOME PAGE */
+.fotorama>img{
+  height: 70px;
+}
+/* Fotorama Links */
+.fotorama__html div,
+.fotorama__html a {
+  display: block;
+  height: 100%;
+  /* Transparent links are not clickable in IE,
+     but non-existent background fixes this.
+    (Put an empty 1×1 image here to avoid
+     errors in console.) */
+  background: url(_.gif);
+}
+/* END OF CAROUSEL */
+
+/* MAIN BODY */
+
+body {
+	font-family: 'roboto';
+}
+
+/* PAGE HEADING */
+.jumbotron {
+	background-color: #81D8D0;
+  margin-bottom: 0px;
+  height: 230px;
+  
+}
+#header-title {
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	font-weight: 900;
+	font-size: 82px;
+	color: black;
+  margin-top: -20px;
+/*  margin-bottom: 30px;*/
+
+}
+#header-subheading {
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	font-weight: 300;
+	font-size: 45px;
+  color: white;
+/*  margin-top: 40px;*/
+}
+
+
+/* MAIN CONTENT */
+#directory {
+   color: white;
+   background-color:#81D8D0;
+   opacity: 1;
+   border-radius: 10px;
+   font-style: italic;
+   font-family: 'Amatic SC';
+   font-size: 22px;
+   font-weight: bold;
+   word-spacing: 5px;
+   margin-bottom: 20px;
+   padding-left: 10px;
+}
+#dir-active {
+  font-weight: bolder;
+  color: black;
+}
+#directory a{
+  color:white; 
+}
+#directory a:hover{
+  color:  #008080;
+  text-decoration: none;
+}
+#other_recipes{
+  margin-bottom: 90px;
+}
+
+.intro {
+	color:  #81D8D0;
+	font-family: 'Amatic SC', cursive;
+	font-size: 45px;
+	font-weight: bold;
+}
+.intro a{
+  text-decoration: none;
+  color:  #81D8D0;
+}
+.intro a:hover{
+  text-decoration: none;
+  color:  #008080;
+}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+.intro_content {
+  text-decoration: none;
+  color:  #008080;
+  font-family: 'roboto', 'nanum pen script', 'arial', cursive;
+}
+.links{
+  color:#81D8D0; 
+  text-decoration: none;
+}
+.links:hover{
+  color: #81D8D0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+.nav {
+  background-color: white;
+  z-index: 300;
+}
+nav {
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 5%;
+  /*margin-top: -50px;*/
+  font-family: 'roboto' , 'Amatic SC' , cursive ;
+ /* font-size: 180%;*/
+}
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: white;
+  width: 100%;
+}
+nav > ul > li {
+  float: left;
+  width: 20%;
+  height: 40px;
+  line-height: 65px;
+  position: relative;
+  z-index: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+nav>ul>li>a {
+  height: 40px;
+  margin-top: -20px;
+  padding: 0;
+}
+
+nav > ul > li:hover {
+  background: white;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border-radius:0px;
+}
+
+#active>a , #active-dd{
+  font-weight: bold;
+}
+
+a:hover > #active-dd{
+  color: white;
+}
+
+/* Shutter Out Horizontal General */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover a, .hvr-shutter-out-horizontal:focus a, .hvr-shutter-out-horizontal:active a {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/* DROP DOWN MENU */
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+}
+
+ul.drop-menu a:last-child li {
+  border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+  display: none;
+}
+
+li:hover > ul.drop-menu li {
+  display: block;
+}
+
+/* Color Properties */
+nav > ul.nav > li>a {
+  color: #81D8D0;
+  /* OR CHNAGE TO color: #008080; */
+}
+nav > ul.nav > li:hover >a {
+  color: rgba(0, 128, 128, 1);
+}
+ul.nav ul.drop-menu li {
+  background: rgba(129,216,208 , 0.8);
+  color: rgba(0, 128, 128, 1);
+}
+ul.nav ul.drop-menu li:hover {
+  background: rgba(129,216,208 , 0.8);
+  text-decoration: none;
+  color: white;
+}
+ul.nav .hvr-shutter-out-horizontal:before {
+  background: rgba(129,216,208 , 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(129,216,208 , 1) , rgba(129,216,208 , 0.8));
+}
+ul.nav .drop.hvr-shutter-out-horizontal:before {
+  background: rgba(0, 128, 128, 0.8);
+}
+
+/* Dropdown Animation for fade in */
+li:hover > ul.drop-menu#type1 {
+  -webkit-perspective:1000px;
+  perspective:1000px;
+}
+li:hover > ul.drop-menu#type1 a li{
+  opacity: 0;
+/*  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+}
+
+/* keyframes used to change opacity, rotation & translation during the animation */
+@-webkit-keyframes type1 {
+  /* start of animation properties*/
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+@keyframes type1 {
+  /* start of animation properties */
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
+li:hover > ul.drop-menu#type1 a:nth-child(1) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type1 a:nth-child(2) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type1 a:nth-child(3) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type1 a:nth-child(4) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type1 a:nth-child(5) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type1 a:nth-child(6) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type1 a:nth-child(7) li{
+  -webkit-animation-name: type1;
+  animation-name: type1;
+  -webkit-animation-duration: 2100ms;
+  animation-duration: 2100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* End of animation */
+
+/* Dropdown Animation for fade in */
+li:hover > ul.drop-menu#type2 {
+  -webkit-perspective:1000px;
+  perspective:1000px;
+}
+li:hover > ul.drop-menu#type2 a li{
+  opacity: 0;
+  transform-origin: top center; 
+/*  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+}
+
+/* keyframes used to change opacity, rotation & translation during the animation */
+@-webkit-keyframes type2 {
+  /* start of animation properties*/
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(40deg);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg));
+  }
+}
+@keyframes type2 {
+  /* start of animation properties */
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  60% {
+    transform: rotateX(50deg);
+  }
+  /* end of animation properties */
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
+li:hover > ul.drop-menu#type2 a:nth-child(1) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(2) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(3) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(4) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(5) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(6) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type2 a:nth-child(7) li{
+  -webkit-animation-name: type2;
+  animation-name: type2;
+  -webkit-animation-duration: 2100ms;
+  animation-duration: 2100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* End of animation */
+
+/* Dropdown Animation for fade in */
+li:hover > ul.drop-menu#type3 {
+  -webkit-perspective:1000px;
+  perspective:1000px;
+}
+li:hover > ul.drop-menu#type3 a li{
+  opacity: 0;
+  transform-origin: top right; 
+/*  -webkit-animation-name: drop-menu;
+  animation-name: drop-menu;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+}
+
+/* keyframes used to change opacity, rotation & translation during the animation */
+@-webkit-keyframes type3 {
+  /* start of animation properties*/
+  0% {
+    opacity: 0;
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg));
+  }
+}
+@keyframes type3 {
+  /* start of animation properties */
+  0% {
+    opacity: 0;
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+/* Increases the animation duration as the dropdown list goes down*/
+/* DOne using nth-child(i)*/
+li:hover > ul.drop-menu#type3 a:nth-child(1) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:150ms;
+  animation-delay:150ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(2) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:450ms;
+  animation-delay:450ms;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(3) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:750ms;
+  animation-delay:750ms;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(4) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:1050ms;
+  animation-delay:1050ms;
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(5) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:1350ms;
+  animation-delay:1350ms;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(6) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:1650ms;
+  animation-delay:1650ms;
+  -webkit-animation-duration: 1800ms;
+  animation-duration: 1800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu#type3 a:nth-child(7) li{
+  -webkit-animation-name: type3;
+  animation-name: type3;
+  -webkit-animation-delay:1950ms;
+  animation-delay:1950ms;
+  -webkit-animation-duration: 2100ms;
+  animation-duration: 2100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* End of animation */
+
+
+
+/* END OF NAVBAR */
+
+
+
+/* FOOTER */
+
+/* Footer General */
+.alignleft {
+  float: left;
+  color: #008080;
+
+}
+.alignright {
+  float: right;
+  color: #008080;
+}
+.alignleft a , .alignright a{
+  text-decoration: none;
+  color: #008080;
+}
+.footer {
+	background-color: rgba(129,216,208 , 1);
+	margin-top: 20px;
+	padding-top: 10px;
+	display: block;
+	width: 100%;
+}
+.footer .alignleft a:hover , .footer .alignleft a:focus , .footer .alignright a:hover , .footer .alignright a:focus {
+  color: white;
+}
+/* Active Page */
+#active-ft {
+  font-weight: bold;
+  color: white;
+}
+/* Social Icons */
+.social-icon{
+  text-align: center;
+  font-size: 16px;
+}
+#get-social{
+  font-family: 'Amatic SC', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+}
+.social-icon>a{
+  text-decoration: none;
+  color: white;
+}
+.fa{
+	margin: 0 6px;
+}
+/* Translates icon up & changes color when hovered over */
+.social-icon .fa{
+  transition: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.social-icon .fa:hover , .social-icon .fa:focus , .social-icon .fa:active{
+  /*font-size: 330%;*/
+  color:#008080;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* End of translation */
+
+/* Search Bar */
+.input-group{
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.input-group-btn>button {
+  color: rgba(0, 128, 128, 1);
+}
+.input-group-btn>button:hover {
+  /* Add some parameters?? */
+  background-color: #008080;
+  color: white;
+}
+.input-group input{
+  color: rgba(0, 128, 128, 1);
+  font-family: 'roboto', FontAwesome;
+}
+/* Placeholder Color */
+.input-group>input::-webkit-input-placeholder {
+color: rgba(0, 128, 128, 0.7) !important;
+}
+.input-group>input:-moz-placeholder { /* Firefox 18- */
+color: rgba(0, 128, 128, 0.7) !important;  
+}
+.input-group>input::-moz-placeholder {  /* Firefox 19+ */
+color: rgba(0, 128, 128, 0.7) !important;  
+}
+.input-group>input:-ms-input-placeholder {  
+color: rgba(0, 128, 128, 0.7) !important;  
+}
+/* End of Search Bar -->
+
+/* END OF FOOTER */
+
+/* BACK TO TOP BUTTON */
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  border-radius: 100%; /* Creates circular button. Remove line to create square button */
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  background: rgba(0, 128, 128, 0.7) url(cd-top-arrow.svg) no-repeat center 50%;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.cd-top:hover {
+  opacity: 1;
+  background: rgba(0, 128, 128, 0.7) url(cd-top-arrow-b.svg) no-repeat center 50%;
+}
+
+@-webkit-keyframes cd-top {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes cd-top {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes cd-top-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes cd-top-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.cd-top:hover, .cd-top:focus, .cd-top:active {
+  -webkit-animation-name: cd-top-float, cd-top;
+  animation-name: cd-top-float, cd-top;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/* END OF BACK TO TOP BUTTON */
+
+/* Media Rules for mobile optimisation */
+
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    width: 75%;
+    margin-left: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .container {
+    width: 75%;
+    margin-left: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 1076px) {
+
+  .block {
+    height: 160px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .block {
+    height: 190px;
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+  .block {
+    height: 150px;
+  }
+
+}
+
+
+@media only screen and (max-width: 930px) {
+  .block {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .block {
+    height: 100px;
+    margin-top: 3%;
+  }
+  .container{
+    margin-left: 20%;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  #blog-content .row {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .container {
+    width: 85%;
+    margin-left: 12%;
+    margin-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .news{
+    display: none;
+  }
+  .container {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .block {
+    height: 80px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .intro-explan span {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+  }
+  
+}
